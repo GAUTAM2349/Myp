@@ -1,0 +1,59 @@
+Stream Training :_
+
+1> LAN
+2> PAN
+3>WAN
+
+4 VPN
+	-> Firewall - can use already existing server or client hardware or can   be assigned a separate computing device in large organizations. So it is software but can either using 
+
+5 topology :- token
+	* MAU unit
+
+* star topology - if a system's wire got disrupted other will not get affected. Most used (by replacing hub with switch
+
+*mesh topology - all pc's are directly connected to each other.
+	two types :-
+	1> mesh
+	2> partial mesh topology
+
+* types of cables :- 
+	*ethernet  - cat5, cat6, cat6e
+	*coaxial
+	*fiber
+
+* types of ethernet :-
+	0> Ethernet
+	1> Fast Ethernet
+	2> GigaBit Ethernet
+	3> 10 Gigabit Ethernet
+	4> Terabit Ethernet
+if it is 't' means copper wire, if it is l, lx then fiber
+
+* color coding scheme - 4 pair utp cable
+	-> straight connection , cross connection
+
+
+* port in which rj45 is connected
+
+* dotted line -> cross connection
+* straight line -> normal connection
+* each pin in port is dedicated to sender and rec
+
+* switch don't need it already accord
+* router needs - kind of small  pc - pc like pin
+* similar devices needs
+
+* in switch 1st and second pin act as receiver.
+* in pc's and routers 1st and second pin act as sender
+
+* for being host a device needs to have ip address
+
+* in dns we have
+1> forward lookup name
+2> backward lookup name
+
+setup dhcp
+setup dns
+NAS box
+SAN (storage area network)

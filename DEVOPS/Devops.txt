@@ -1,0 +1,2 @@
+
+DEVOPS - is a set of practices that automates and integrates the process OF and between Software Development and operational (servers, network, databases - focuses on stability and uptime and infrastructure) teams. The primary goal is to have shared responsibility for both developers and operational teams.

@@ -1,0 +1,5 @@
+SELECT name, address, email_address, contact
+FROM CUSTOMER WHERE
+(name LIKE 'P%' OR name LIKE 's%') 
+AND email LIKE '%gmail.com'
+ORDER BY customer_name DESC;

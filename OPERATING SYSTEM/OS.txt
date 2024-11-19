@@ -1,0 +1,23 @@
+15> The kernel is software, not hardware. It is the core component of an operating system that manages hardware resources and facilitates communication between hardware and software applications.
+
+16> The kernel uses device drivers to communicate with hardware devices. A device driver is a specific type of software that tells the kernel how to interact with a particular piece of hardware (e.g., graphics card, printer, disk drive). The kernel does not need to know how each piece of hardware works; it just needs the appropriate driver.
+
+System Calls: Applications use system calls to request services from the kernel. When an application needs to perform an operation involving hardware (like reading from a disk or sending data to a printer), it makes a system call. The kernel processes this request and uses the appropriate device driver to communicate with the hardware.
+
+
+1> To show kernel log messages which command can be used.
+	-> dmesg
+
+2> A system call is a mechanism that allows a program to request services from the operating system's kernel. System calls provide the interface between a running program and the operating system, enabling the program to perform operations that are outside its direct control, such as accessing hardware, managing files, or communicating with other processes. Here are some key points about system calls. system calls provide FUNCTIONS that allow programs to request services from the operating system, enabling operations such as file manipulation, process management, and inter-process communication. These functions are typically part of the operating system's API (Application Programming Interface) and allow developers to perform tasks that require kernel-level access.
+
+
+
+
+3> uname -> unix name
+	
+uname -s: Kernel name.   (system name)
+uname -n: Network node hostname.  (network name)
+uname -r: Kernel release.  (release )
+uname -v: Kernel version.   (version)
+uname -m: Machine hardware name. (machine architecture)
+uname -a: All available system information. (all)

@@ -1,0 +1,3 @@
+API's Development :-
+
+1> CleverTap: CleverTap is a tool used by app and website owners to understand how people use their product and to communicate with them effectively. It collects data on user actions (like clicks, scrolls, or purchases) and can send personalized messages to them. For example, if a user hasn’t opened an app in a while, CleverTap might send a reminder or special offer to bring them back.

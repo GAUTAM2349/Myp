@@ -1,0 +1,92 @@
+JAVA :-
+
+1> Java is platform independent bcz java compiler converts java code to bytecode, which does not depends upon os.
+2> Whereas, jvm which actually runs bytecode is platform dependent, it is available form many platforms and runs 
+   bytecode according to it.
+
+3> Java is both compiled and interpreted language. Java code is first compiled by java compiler into bytecode, which       is an intermediate and platform independent representation of code. Since it is compiled here, we get to know all the mistakes in our code at once.
+
+This bytecode is then interpreted by jvm to machine native code for different platforms. This is a line by line process.
+JIT(JUST IN TIME) compiler is part of jvm, which encounters hot spots (frequently used code), compiles it and keep it in cache so that every time the program is run it does not need to reinterpret this codes. It increase the performance. It does not cache all the bytecode, only frequently used bytecode, otherwise it would have used more computing resources and balance between speed and resources would not have been achieved.
+
+4> Classloader
+5> jdk > jre > jvm
+
+6> Multiple inheritance is supported in c++ but not in java.
+
+7> Static methods are resolved at compile time (static binding), and final methods are resolved at compile time as well, preventing any overriding in subclasses.
+
+8> You can use the @Override annotation to indicate that a method is intended to override a method from its superclass. While this is not required, it is a good practice, as it helps catch errors at compile time.
+
+9>      1> VIRTUAL functions :- When we take reference of superclass and assign object of subclass, earlier in c++ reference's method was called ( asked in sharpener to mentor) although an overridden method is available in subclass.
+
+	2> In java instance methods although their is no use of virtual keyword deliberately, but instance methods are implicitly virtual. Java uses DYNAMIC METHOD DISPATCH to determine which method to execute at runtime. Jvm looks at the method in the actual object not the reference type.
+
+NOTE :- This never means (my trouble was this) that you can call a method on reference which is not defined in base class. It is applicable for overridden methods only.
+
+ALSO u can't call the method of superclass if it is overridden in subclass, having object type is of subclass. (although i want to experiment by adding some extra parameters and conditions). you will have to add additional method for this in superclass.
+
+Also in future suppose if u extend you subclass further and override that method again, then it is not the case that method of new derived class will be called. This polymorphism is restricted to type of object only. This means we can extend our classes without need to change our previous codes. THIS FEATURE IS VERY IMPORTANT IN SOFTWARE DEVELOPMENT. IT IS KNOWN AS OPEN/CLOSED PRINCIPLE (OPEN FOR EXTENSION BUT CLOSED FOR MODIFICATION).
+
+10> Early Binding vs Late Binding :- 
+	
+	Binding refer to when a method call is resolved, or bound, to its method 	implementation.
+	
+	Early Binding refers to method call being resolve at compile time. It includes 
+	overloaded methods also, because it is clear due to parameters, which function 
+	to call at the time of compilation. OVERRIDING NOT  SUPPORTED.
+
+
+	Late binding refers to method call being resolved at run time. Occurs in c++'s 
+	virtual methods and all instances of java. Slightly slower than early binding
+	but it provides the flexibility needed for polymorphism.
+
+12> STRING POOL :- It is special storage area in heap in java programming language, part of memory management. It optimizes memory usage by reusing instances of strings.
+
+When u create a string LITERALS, java checks if an identical string already exists in string pool. If yes then instead of creating new string it refers to the existing one.
+This process is called STRING INTERNING.
+
+This is not the case for strings created with new keyword or string objects. For string objects java creates new string object on the heap every time Although u can force this behavior by MANUAL INTERNING, using intern() method on string object.
+
+If a string object without interning is present in heap then new string literal containing same literal would not refer it.
+
+
+
+13> If you don't make main function as static then it would compile but not run. Since we usually do both at same time so we will get error otherwise only compilation would not lead to error.
+At the time or running jvm would try to fetch the main method without any instantiation but since main will not be static it would throw error. Because it will not be able to find entry point for program. Also if u think that we can instantiate our main function inside our program that wont make u happy bcz without entry point jvm would never reach your line of code.
+
+14> A namespace in programming serves as the container that holds relatable identifiers (variables, classes, functions..) and ofcourse their codes (may not be ..), hence providing modularity. It helps in organizing relatable data, avoiding naming conflicts (like different packages can contain same named things) and access protection ( like classes in same package may access each other easily while it will be harder for classes in other packages, if access is restricted using access modifiers). Also it can improve reading by providing context. Like math package gives hint that something related to math will be in this package. 
+
+15> Their are 8 primitive data types in java. Primitive data type holds data address(using variable names) and data contiguously, whereas, Non-Primitive-Types (String, class, object, interface, Array ..) memory address which points to the location where actual data is kept.
+
+16> Wrapper classes are final and immutable.
+
+17> Autoboxing and unboxing are two process in java which helps to facilitate conversion between primitive data type and their respective wrapper class. But this is possible for respective wrapper class, like u can assign Double wrapper class obj to primitive int.
+
+18> overridding happens only for methods and not for variables.
+
+19> Class variable vs Instance variables :- Class variables are common for all the instances. That is every instance acces same class variable. It can be useful in scenarios like if we need to create count of how many instances of a class is created yet. Class variables require static keyword. If a class variable is declared final then it is accessible to each instances but not mutable.
+
+Instance variables are unique for each instances.
+
+Both class and instance variables are declared outside of any method in a class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

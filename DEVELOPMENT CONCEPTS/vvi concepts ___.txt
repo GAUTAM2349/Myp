@@ -1,0 +1,16 @@
+vvi concepts :___
+
+1>  Prefetching
+Prefetching is a fundamental technique in modern computer architecture that aims to bridge the gap between processor speed and memory access latency. At its core, prefetching is about anticipation and preparation — it’s the art of predicting what data the processor will need shortly and fetching that data from slower memory into faster cache before it’s requested.
+
+Their are more techniques ....... 
+Medium link :-
+https://medium.com/nerd-for-tech/prefetching-optimizing-memory-access-for-performance-eae4715afe76
+
+2> UTM (Urchin Tracking Module) parameters are tags you add to URLs to track the effectiveness of digital marketing campaigns. Originally developed by Urchin Software Corporation, which Google acquired, these parameters are now widely used in Google Analytics and other tracking systems.  (BOAT url has this)
+
+3> WebSocket.. MQTT (Message Queuing Telemetry Transport) is a lightweight messaging protocol designed for devices with limited bandwidth, low power, or unreliable networks, such as IoT (Internet of Things) devices. It allows efficient, real-time data exchange between devices in a "publish/subscribe" model, making it suitable for applications where continuous data streaming or event notifications are essential. --- (BOAT)
+
+4> CleverTap: CleverTap is a tool used by app and website owners to understand how people use their product and to communicate with them effectively. It collects data on user actions (like clicks, scrolls, or purchases) and can send personalized messages to them. For example, if a user hasn’t opened an app in a while, CleverTap might send a reminder or special offer to bring them back.
+
+What if CleverTap is not used? Without CleverTap, the app owner has less insight into how people use their app and might miss out on keeping users engaged. CleverTap helps apps understand user behavior, target them with relevant messages, and, ultimately, keep users coming back. Without it, retaining users and understanding their needs could be much harder.  (BOAT , BLINKIT)

@@ -1,0 +1,8 @@
+skills :_
+
+* Databases, SQL, Kubernetes, Spark, Kafka, gRPC, and AWS.,
+* Python, Rust, JavaScript, C / C++, Java, Go.
+* shell scripting with terminal tools such as bash, zsh, and environment variable management.
+* Strong grasp of system fundamentals, including threads versus processes, multiprocessing versus concurrency, etc.
+* A high reputation on platforms like StackOverflow
+* Evidence of meaningful contributions to open source projects

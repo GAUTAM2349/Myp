@@ -1,0 +1,3 @@
+shortcut keys :-
+
+1> f5 -> reload page

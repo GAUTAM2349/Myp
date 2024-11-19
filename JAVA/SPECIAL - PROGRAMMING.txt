@@ -1,0 +1,11 @@
+My-Doubt SPECIAL - PROGRAMMING
+
+1> VIRTUAL functions :- When we take reference of superclass and assign object of subclass, earlier in c++ reference's method was called ( asked in sharpener to mentor) although an overridden method is available in subclass.
+
+2> In java instance methods although their is no use of virtual keyword deliberately, but instance methods are implicitly virtual. Java uses DYNAMIC METHOD DISPATCH to determine which method to execute at runtime. Jvm looks at the method in the actual object not the reference type.
+
+NOTE :- This never means (my trouble was this) that you can call a method on reference which is not defined in reference class but defined in subclass. It is applicable for overridden methods only.
+
+ALSO u can't call the method of superclass if it is overridden in subclass, having object type is of subclass. (although i want to experiment by adding some extra parameters and conditions). you will have to add additional method for this in superclass.
+
+Also in future suppose if u extend your subclass further and override that method again, then it is not the case that method of new derived class will be called. This polymorphism is restricted to TYPE OF INSTANCE IN LEFT SIDE ONLY. This means we can extend our classes WITHOUT need to change our previous codes. THIS FEATURE IS VERY IMPORTANT IN SOFTWARE DEVELOPMENT. IT IS KNOWN AS OPEN/CLOSED PRINCIPLE (OPEN FOR EXTENSION BUT CLOSED FOR MODIFICATION).

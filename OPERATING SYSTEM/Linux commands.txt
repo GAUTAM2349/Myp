@@ -1,0 +1,128 @@
+Linux commands:- (DEBIAN BASED)
+
+1> cp - copy ---> cp -r src_address destination_address
+ 
+
+ /* -1 (der), -3 (prev,curr,next month), -h (highlights current date), -m (Monday first), -j (julian calendar),     , -y (display entire year)
+
+ 
+2> man - manual page  -----> man ls
+3> cal --->  cal 9 2024, cal 2024, cal -h, cal -m, cal -j, cal -y
+4> ncal - variation of cal, provides more option and a different format. ---> ncal -M 2024
+
+5> sudo
+
+6> seq - generates sequences ---> seq 1 366 -> displays sequence from 1 to 366
+7> ls - to list all	
+
+8> touch - to create new files (not directories)
+
+touch filename.txt
+Creates an empty file named filename.txt or updates its timestamps.
+
+touch existingfile.txt
+Updates the access and modification timestamps of existingfile.txt.
+
+touch file1.txt file2.txt file3.txt
+Creates multiple files (file1.txt, file2.txt, file3.txt) at once.
+
+touch -t 202310121200.00 filename.txt
+Sets the timestamp of filename.txt to October 12, 2023, 12:00 PM.
+
+touch -a filename.txt
+Updates only the access time of filename.txt.
+
+touch -m filename.txt
+Updates only the modification time of filename.txt.
+
+touch log.txt
+Ensures that log.txt exists, creating it if necessary.
+
+
+10> cd - change directory
+
+11> pwd - print working directory
+
+11> ls -d */ - THIS command list the names of directories only in current directory. If we remove -d then it 
+would also list all first level files and sub-directories of those directories.
+
+
+12> ls: List directory contents.
+13> cp: Copy files and directories.
+14> mv: Move or rename files and directories.
+15> rm: Remove files or directories.
+16> cat: Concatenate and display files.
+17> grep: Search for patterns in files.
+18> ls *.txt - Lists all files ending with .txt.
+ls * - Lists all files and directories in the current directory.
+ls file* - Lists all files and directories starting with "file".
+ls *.log - Lists all files ending with .log.
+cp *.jpg /backup - Copies all .jpg files to the /backup directory.
+rm * - Deletes all files in the current directory (use with caution).
+mv * ../destination - Moves all files and directories to the specified ../destination folder.
+ls file?.txt - Lists files starting with "file", followed by one character, and ending with .txt.
+ls file[1-3].txt - Lists files named file1.txt, file2.txt, and file3.txt.
+ls \*file.txt - Lists files literally named *file.txt, treating * as a character, not a wildcard.
+
+
+
+
+
+
+
+
+LINUX OPTIONS:- (same option's function can vary base on command for which it is used)
+
+
+1> -R -> recursively
+2> -r -> REVERSE
+2> --version
+3> apt-get - advanced package tool
+
+
+
+COMMANDS WITH EXPLAINATION :-
+
+    1>   ls -p | grep -v /
+	ls: Lists the contents of the current directory.
+-p: Adds a / at the end of directory names.
+|: Pipes the output of ls -p to the next command.
+grep: Searches for text matching a pattern.
+-v: Inverts the match, showing only lines that do not contain the specified pattern.
+/: The pattern used to filter, which in this case excludes any entries ending with / (directories).
+
+  
+    2>  ls -p
+
+	Documents/  
+	file.txt  
+	image.png  
+	Music/  
+
+			/* just adds '/' to end of directory names else output is same as for ls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Multiple options can often be combined (e.g., ls -al instead of ls -a -l).
+* Options are usually case-sensitive (-R is different from -r).
+* Files or directories starting with '.' are hidden files or directories.
+
+
+FORMAT SPECIFIERS :-
+
+1> DATE
+

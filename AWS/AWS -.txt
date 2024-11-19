@@ -1,0 +1,101 @@
+AWS :-
+
+* A server is just like our computer but with very high computing resources and ofCourse they don't need screens.
+  But they typically don't use normal webservers like node.js (or may be with combination..yet to see), like earlier we used xampp, tomcat...they use ngnix, apache, etc...
+
+*BOOTSTRAP SCRIPT
+
+
+* WHAT ARE EBS?
+-> EBS stands for Elastic Block Store, a storage service provided by Amazon Web Services (AWS). It is designed to provide high-performance, block-level storage for use with Amazon EC2 instances. Here’s a breakdown of what EBS is and how it works:
+
+Key Features of EBS:
+Block Storage:
+
+Unlike file storage (like Amazon S3), EBS provides block storage, which means data is stored in fixed-sized blocks and can be accessed as if it were on a local hard drive.
+This setup is ideal for databases, file systems, and applications that require low-latency, consistent performance.
+Elastic:
+
+EBS volumes can be easily resized and adapted to the needs of an application without downtime.
+Storage capacity can grow as applications demand more, hence “elastic.”
+Persistent Storage:
+
+EBS volumes are persistent, meaning data is retained even if the associated EC2 instance is stopped or terminated. You can detach an EBS volume and reattach it to another instance, providing flexibility.
+Types of EBS Volumes:
+
+General Purpose SSD (gp3/gp2): Offers a balance between price and performance, suitable for most use cases.
+Provisioned IOPS SSD (io2/io1): Designed for applications with high I/O demands, such as databases.
+Throughput Optimized HDD (st1): Provides high-throughput for data-intensive applications, such as data warehousing.
+Cold HDD (sc1): Low-cost storage for infrequently accessed data, like backups.
+Snapshot and Backup Support:
+
+EBS allows you to create snapshots, which are point-in-time backups of volumes. These snapshots are stored in Amazon S3, allowing for easy restoration and disaster recovery.
+Scalability and Redundancy:
+
+EBS automatically replicates data within an AWS Availability Zone, ensuring durability. It also scales seamlessly as application storage needs grow.
+Encryption and Security:
+
+EBS provides encryption at rest using AWS Key Management Service (KMS), ensuring data security and regulatory compliance.
+Use Cases for EBS
+Databases: Storing database files that require high performance and persistence.
+Enterprise Applications: Running business applications that need consistent, high IOPS.
+Backups: Creating snapshots for recovery and backup purposes.
+Big Data and Analytics: Supporting data-intensive workloads like data warehousing.
+Quick Example of How EBS Works:
+Attach EBS Volume to an EC2 Instance: Create an EBS volume and attach it to an EC2 instance, where it appears as a local drive.
+Read/Write Data: The instance can read from and write to the EBS volume as if it were a local disk.
+Snapshot for Backup: Take snapshots for backup or to replicate the setup to another instance.
+Detach or Delete: The volume can be detached from the instance and reattached elsewhere if needed.
+
+NOTE :- IT IS USED AS ROOT DEVICE TYPE IN EC2.
+
+
+
+* What is meant by root device type : ebs.
+  -> In the context of Amazon Web Services (AWS), when you see "root device type: EBS," it refers to the type of storage that is used for the root volume of an Amazon Elastic Compute Cloud (EC2) instance.
+  -> EBS is a block storage service provided by AWS that offers persistent storage for EC2 instances.
+  -> The root volume in the context of Amazon Web Services (AWS) refers to the storage volume that contains the operating system and other essential files required for an EC2 (Elastic Compute Cloud) instance to boot and operate.
+
+
+
+*What is Virtualization?
+Virtualization is a way of creating a "virtual" version of something—like a computer, server, storage device, or network—so it can be used separately from the physical device.
+
+Imagine you have one physical computer but want to use it as if it were multiple computers. Virtualization lets you do that! You can create virtual machines (VMs) on a single computer, with each VM acting like a separate computer, complete with its own operating system and applications.
+
+* SVM(software virtual machines) VS  HVM(hardware virtual machine) :-
+
+-> Earlier their was no concept of VM's, or can say it was not so prominent. So if someone needs to have vm softwares(hypervisor) were used like VMware or Virtual box to have a Virtual Machine. What these software did is to manage computing resources for the vm's creating separation between the other computing resource or may be utilizing available computing resources that is not being used by other core computer. In other words they were controlling all the hardware allocation and they decided how to interact with hardware or which resources to interact with. Each action must be passed through the Hypervisor.
+
+-> But with the rise of concept of VM's now many hardware's are designed like that they can directly be controlled and no or very less interaction with external software is needed to interact with vm. In this way extra overhead of passing every action through hypervisor is minimized to a great extent. 
+
+NOTE :- IN EC2 instance they use HVM.
+
+*IAM (Identity and Access Management) is a service that helps you manage access to AWS resources securely.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

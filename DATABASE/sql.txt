@@ -1,0 +1,17 @@
+* Although we specify NUMBER(10) for contact number while defining table, we need to apply a CHECK constraint on contact to check the length of number. This is bcz specifying 10 in definition assures only that it will not exceed 10 digits and not that will be not less than 10 digit.
+
+*The CASCADE option in a DROP TABLE statement is used to automatically delete all dependent objects, such as foreign key constraints, views, or other tables that reference the table being dropped. Without CASCADE, if there are dependencies on the table, the DROP TABLE operation would fail, and you would have to manually remove or adjust those dependencies.
+
+* DELETE vs DROP :- 
+	Delete is used to remove only specific or all records of the table itself. If condition is provide it removes specific record else all the records. Whereas,
+DROP removes complete structure or existence of an object ( table or any other objects) from the database.
+
+* DELETE VS TRUNCATE :-
+	Delete removes records one by one by logging each deletion. Even if all the records are to be deleted, it removes them one by one which is slower. It can be rolled back if done within a transaction. whereas,
+TRUNCATE removes all the records at once. In many RDBMS it can't be rolled back.
+
+* ALTER VS UPDATE :-
+
+	Alter is used to change structure of table (data type of column, adding or removing columns, changing data type and adding or dropping constraints),
+	whereas,
+	Update is used to change data withing table.

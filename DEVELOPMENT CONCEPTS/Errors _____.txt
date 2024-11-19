@@ -1,0 +1,34 @@
+Errors :_____
+
+1> 10Invalid keyframe value for property transform: autoUnderstand this warningAI
+335Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.Understand this warningAI
+shopify-perf-kit-1.0.1.min.js:1 
+        
+        
+       POST https://zebronics.com/.well-known/shopify/monorail/v1/produce net::ERR_CONNECTION_CLOSED
+
+
+
+---------> These warnings and errors typically relate to website development or debugging tools in Chrome and might occur due to several reasons, including coding issues or connectivity problems. Let’s go through each one:
+
+"Invalid keyframe value for property transform: auto":
+This warning means that there’s a CSS keyframe animation in your code that has a transform property set to an invalid value (auto). The transform property in CSS doesn't support the value auto; instead, it should contain transformations like translateX(0), rotate(45deg), or scale(1.2). You’ll need to inspect your keyframe animations and replace any transform: auto values with valid transformations.
+
+"Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies":
+This message is an informational warning from Chrome indicating that Chrome's approach to third-party cookies is evolving to give users more privacy control. This shift, part of Chrome's Privacy Sandbox initiative, might impact how third-party cookies are handled on your site. If you rely on third-party cookies for analytics or other functions, consider alternative approaches, such as first-party cookies or Google’s new Privacy Sandbox APIs.
+
+"POST https://zebronics.com/.well-known/shopify/monorail/v1/produce net::ERR_CONNECTION_CLOSED":
+This error suggests that a POST request to Shopify's monorail endpoint failed due to a closed connection. Possible causes include:
+
+Network issues: The user’s or server’s connection might have been temporarily down.
+Firewall or security settings: Some network security configurations might block requests to external servers.
+Shopify issue: If this endpoint is maintained by Shopify, there could be a temporary problem on their server.
+To resolve this, try:
+
+Verifying network connectivity.
+Ensuring firewall or security settings are not blocking this URL.
+Checking Shopify’s status page or contacting support if this persists.
+If you need further help debugging these, let me know!
+
+
+2>

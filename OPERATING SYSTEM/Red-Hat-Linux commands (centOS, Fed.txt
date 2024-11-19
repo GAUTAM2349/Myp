@@ -1,0 +1,4 @@
+Red-Hat-Linux commands (centOS, Fedora, RHEL-red hat enterprise linux) :-
+
+1> yum - yellowdog updater modified, earlier yup - yellowdog updater. Yellow Dog was a Linux distribution once.
+2> dnf - DANDIFIED FOR YUM (dandified means more elegant, sophisticated) - successor of yum, used in newer versions

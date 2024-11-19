@@ -1,0 +1,5 @@
+reboot for new files
+
+* booting process - all the process between we press power button and our windows login page
+* stages of boot process - 6 process where each process is connected to next process
+	bios - mbr - kernel - ....

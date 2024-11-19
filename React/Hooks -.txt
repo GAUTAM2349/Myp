@@ -1,0 +1,9 @@
+Hooks -:
+
+* Hooks are used to keep USER INTERFACE in SYNC with the change in states(variables).
+
+ -> suppose u are displaying an output, paragraph, or anything but not using literal rather a javascript variable.
+    Also u have put an event listener that on click of certain button change the value of that variable. Upto this 
+	everything happens well. As u click on button the value of that variable gets changed. BUT!!!, html doesn't 
+	understands js variables. For it, the value of variable was resolved and hardcoded, not like tracking the
+	variable. Even in programming languages also, if u change the value of variable, it is updated only for later parts and not before it's update. So if u used that variable in 30 places, then u expect that a change in variable should be a change in 30 places in ui. That is 30 separate line of updation code for each elements by getting id, or their class name. But this is not case in react. React does all this for us. When u declare a state variable, this synchronization is handled itself.

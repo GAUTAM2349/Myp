@@ -1,0 +1,3 @@
+cloud :-
+
+1>MTBF (Mean Time Between Failures) is the average time a device is expected to function before failing. For a cloud storage service, dependability can be measured by uptime, which is the percentage of time the service is accessible and operational. usually it is 99.99999999%

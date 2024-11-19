@@ -1,0 +1,183 @@
+
+
+
+
+
+
+
+
+
+
+7> CHAR vs  VARCHAR2 -> CHAR is restrictive of the length specified. If length is not specified it's 1byte, and u cannot add a string more than one character in that case, otherwise u need to specify length. Max size is 32767bytes or characters. It pads space if string size is less than specified length.
+
+VARCHAR2 is not restrictive. But YOU MUST SPECIFY LENGTH and string can be less than specified size but NOT MORE.
+It does not pads extra space if string length is less than the specified length, hence memory wastage is reduced.
+
+
+8> Usually in sql or pl/sql are not case sensitive but you can make them case-sensitive by encapsulating them inside double quotes. But it is used in very rare case.
+
+9> PUBLIC SYNONYMS and aliases are same.
+
+10> '||' is used for string concatenation
+
+11> The TRIM function in Oracle is used to remove specified characters from the beginning (leading), end (trailing), or both ends of a string. By default, it removes whitespace from both ends of the string if no specific character is specified.
+
+
+12> In PL/SQL, pseudorecords are special variables that allow you to access the values of a row being affected by a trigger. They are particularly useful for row-level triggers and provide a way to refer to the current row's data before and after an operation, such as an insert, update, or delete.  Pseudorecords (:NEW and :OLD) provide a powerful way to access and utilize the data being manipulated in triggers.
+
+:NEW Pseudorecord:
+
+The :NEW pseudorecord is used to access the values of the new row that is being inserted or updated.
+It is only available in INSERT and UPDATE triggers.
+You can use :NEW to reference the new values that will be stored in the database.
+
+:OLD Pseudorecord:
+
+The :OLD pseudorecord is used to access the values of the row that existed before an update or deletion.
+It is available in UPDATE and DELETE triggers.
+You can use :OLD to reference the previous values before the changes are applied.
+
+13> TRIGGERS simply means actions, like insert, delete, update...
+
+14> Syntax: PL/SQL does not support directly assigning a result from a SELECT statement using the = operator. The = operator is only for direct assignments, not for executing queries.
+
+15> PL/SQL does not support directly assigning a result from a SELECT statement using the = operator. The = operator is only for direct assignments, not for executing queries.
+PL/SQL requires the SELECT INTO construct to fetch and assign data from a query to a variable.
+
+= in pl/sql is used with if/else or where clause not for assignment. For assignment we use :=  . But this assignment only work when a literal is assigned and not something returned by queries.
+
+
+
+16> v_department_id DEPARTMENT.DEPARTMENT_ID%TYPE;
+17>  v_department_record DEPARTMENT%ROWTYPE;
+
+
+18> A cursor is a database object that allows you to retrieve and manage query results row by row. It acts as a pointer to a result set (the rows returned by a query).
+
+19> In pl/sql specifying length of a NUMBER data type is not required, but for VARCHAR2(LENGTH) IS REQURIRED.
+
+20> ADD CONSTRAINT temp_fk FOREIGN KEY (BRANCH_ID) REFERENCES BRANCH(Branch_Id);  
+/* first table name , column name inside parentheses */
+
+
+
+21>   Quotes for LIKE clause: In SQL, string literals should be enclosed in single quotes (') instead of double quotes (").
+The OR condition: You need to repeat the column name for each condition in the OR clause.
+Check for NOT NULL: The correct syntax to check if a column is not null is IS NOT NULL.
+The Gmail domain condition: Based on your input, I believe you meant to filter customers whose email is a Gmail address, which would involve a condition like email_address LIKE '%gmail.com'.
+
+22> If you delete a row from a table which is being referenced by another table then it won't allow. At first you will have to delete the child row in child table. ALTHOUGH THIS BEHAVIOR CAN BE SURPASSED USING "ON DELETE CASCADE". It allows to delete  a row which is being reference by other table.
+
+When you define a foreign key constraint with ON DELETE CASCADE, deleting a row from the parent table will automatically delete all the corresponding rows in the child table that reference the deleted row. This is useful for maintaining referential integrity when you want the deletion in the parent table to propagate to the child table.
+
+FOREIGN KEY (Courier_ID) REFERENCES COURIER(Courier_ID) ON DELETE CASCADE
+
+
+23>  2. NULL in Foreign Keys:
+Yes, NULL is allowed in a foreign key column. A foreign key can have NULL values, and these NULL values are not subject to referential integrity checks.
+
+24> TRUNCATE  V/S  DELETE
+ 	-> DELETE deletes rows one by one by logging the deletion.
+	-> Truncate deletes all rows at once, ie. page by page.
+	-> DELETE allows filtering by using WHERE clause whereas, truncate deletes all the rows.
+        -> TRUNCATE IS DDL   whereas, DELETE is DML.
+	-> You cannot ROLLBACK truncate whereas DELETE CAN BE ROLLEDBACK.
+
+
+25> 
+If a table is referencing rows from another table using foreign keys, and you try to TRUNCATE the referenced table, it will throw an error unless you have explicitly handled the foreign key constraints.
+
+Here's a breakdown of how TRUNCATE works in this scenario:
+
+1. Foreign Key Constraints:
+TRUNCATE fails if there is an active foreign key constraint between the table you are trying to truncate and another table. This is because TRUNCATE does not perform row-by-row deletion, which means it does not check for referential integrity constraints (unlike DELETE).
+If a table being truncated is referenced by foreign keys (i.e., another table has a foreign key pointing to the table being truncated), the operation will fail with a constraint violation error unless you first drop or disable those foreign key constraints.
+Example:
+Suppose you have two tables: orders and customers.
+orders table has a foreign key constraint pointing to the customers table (e.g., orders.customer_id references customers.id).
+If you attempt to truncate the customers table, you will get an error because truncating the table would violate the foreign key constraint, leaving orphaned rows in the orders table.
+Error Scenario:
+sql
+Copy code
+TRUNCATE TABLE customers;
+-- ERROR: cannot truncate a table referenced in a foreign key constraint.
+2. Difference with DELETE:
+DELETE would allow you to delete rows, but it checks foreign key constraints and ensures that rows in other tables referencing the deleted rows are handled (e.g., cascades or restrict actions).
+If you use DELETE, you could specify ON DELETE CASCADE to automatically delete the rows in the referencing table when rows in the referenced table are deleted.
+3. Workaround for TRUNCATE:
+If you still need to TRUNCATE the table, you can temporarily drop or disable the foreign key constraint, truncate the table, and then re-enable the constraint.
+Alternatively, if referential integrity is not an issue (e.g., you're archiving or fully resetting the data), you can use ON DELETE CASCADE in the foreign key definition and perform a DELETE operation instead of TRUNCATE.
+Example Workaround (Disabling Foreign Key Constraints):
+sql
+Copy code
+-- Disable foreign key constraints
+ALTER TABLE orders DISABLE CONSTRAINT fk_customer_id;
+
+-- Truncate the customers table
+TRUNCATE TABLE customers;
+
+-- Re-enable the constraint
+ALTER TABLE orders ENABLE CONSTRAINT fk_customer_id;
+In Summary:
+Even though TRUNCATE does not check foreign key constraints at a row level, it will fail if there is an active foreign key relationship between the table you're trying to truncate and another table. The operation will throw an error unless the foreign key constraints are dropped or disabled temporarily.
+
+
+4> ALTER TABLE COURIER DROP COLUMN column_name;
+
+   -> here we are removing completely a column from a table, ie. changing
+      a table's structure. Hence alter is required.
+
+   -> also we are using column because drop can be used to drom table and 
+	column both, so it is not implicit.
+
+5> with MODIFY we don't use COLUMN keyword. Because it is meant to modify columns only. While renaming needs to use COLUMN keyword, because it is basically meant for table, indexes, sequences. Hence we don't use TABLE keyword while renaming.
+
+6> When COLUMN is Necessary:
+The COLUMN keyword is mostly used in situations where the operation might otherwise be confusing, or where Oracle has designed the SQL syntax to differentiate between different types of alterations to the table.
+
+Where the COLUMN Keyword is Used:
+Dropping a column: ALTER TABLE ... DROP COLUMN column_name;
+Renaming a column: ALTER TABLE ... RENAME COLUMN old_column_name TO new_column_name;
+Where the COLUMN Keyword is Not Needed:
+Modifying a column: ALTER TABLE ... MODIFY column_name datatype;
+Adding a column: ALTER TABLE ... ADD column_name datatype;
+
+
+7> DUAL is a dummy table with a single row and single column.
+SELECT * FROM DUAL is used to return a single row, especially in cases where no actual data needs to be retrieved from other tables.
+It's commonly used in INSERT ALL statements to perform multiple inserts without querying an actual data source.
+
+
+8> Usually we don't use TABLE keyword in DML and use it in DDL except renaming table (not column).
+
+9> SELECT * FROM my_table WHERE column_name IS NULL;
+	-> NULL is non-comparable value, means u cannot use = operator or similar thing to query based on condition where value is null. Hence u will have to use 'IS'. Hence we say, NULLS can't be directly selected from table.
+Note :- IS NULL is a keyword, so we don't encapsulate them inside quotes.
+
+10> wildcards are special characters used in place of other characters, typically when performing searches or pattern matching in databases, file systems, or other text-processing environments. Wildcards are placeholders that represent one or more characters in a string, and they allow flexible querying or pattern matching.
+
+10> SELECT first_name FROM EMPLOYEES WHERE
+    first_name LIKE '_im';
+
+  -> output's only those rows where name has only one character before 'im'.
+
+
+Match names with exactly 4 characters, where the first character is "J":
+	SELECT first_name FROM EMPLOYEES WHERE first_name LIKE 'J___';
+
+
+Match names where the second character is "a" and the name is exactly 5 characters long:
+	SELECT first_name FROM EMPLOYEES WHERE first_name LIKE '_a___';
+
+
+Match names where the second character is "a", and there are at least two characters following it:
+	SELECT first_name FROM EMPLOYEES WHERE first_name LIKE '_a%';
+
+Match names where the name starts with "J" and ends with "n", but has any number of characters in between:
+	SELECT first_name FROM EMPLOYEES WHERE first_name LIKE 'J%n';
+
+
+Match names where the first character is "A" and the third character is "n":
+	SELECT first_name FROM EMPLOYEES WHERE first_name LIKE 'A_n%';
+
+

@@ -1,0 +1,5 @@
+words
+
+1> CANONICAL :-
+2> Robust
+3> proprietary

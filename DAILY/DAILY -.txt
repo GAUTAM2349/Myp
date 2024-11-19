@@ -1,0 +1,25 @@
+DAILY :-
+
+3> CDMA sims used code division multiplexing whereas, GSM uses combination of TDMA and FDMA but TDMA is primary.
+4> WIFI uses radio waves.
+5> We use WPA2. It is more secure than WPA.
+6> Declarative vs Imperative programming
+7> clauses
+8> A circuit board, or printed circuit board (PCB), is a flat board made of insulating material (like fiberglass) with conductive pathways etched or printed on it.
+
+9> : While clock speed is an important indicator of CPU performance, it is not the only one. Other factors, like the number of cores, cache size, architecture, and instruction sets, also play a crucial role in determining overall performance.
+
+10>  Higher clock speeds also require more power. As a result, power management features like Dynamic Frequency Scaling or Turbo Boost may adjust the clock speed up or down depending on the workload and thermal conditions. A CPU with more cores but a slightly lower clock speed can outperform a CPU with a higher clock speed but fewer cores, especially for multi-threaded tasks.
+
+
+12>  NTFS or APFS
+
+
+
+
+
+
+17> In a programming context, Gremlins often refer to invisible or hard-to-detect characters that can cause issues in code or data processing. Use NOTEPAD (not ms-word) to see and remove those invisible characters.
+
+
+___________________
