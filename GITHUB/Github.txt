@@ -1,0 +1,122 @@
+GitHub - Helps to store, see changes in code, host websites , makes collaboration of developers easy.
+
+*GitHub is name of the website.
+
+*git is command line tool which helps to manage or GitHub account. It is responsible for git commands to work on our system.
+
+*It has different variations like git CLI is windows command line which is accessible through any of the command prompt like that of vs code or other editors if git is installed.
+
+*git bash is also same thing but bash is featured to provide Linux like commands to do same thing so that Linux users can work on windows.
+
+*git ui is user interface for people who don't want to write commands for doing basic stuffs like creating repo...but is least used bcz everything can be done using cli only.
+
+*To check if git is installed or not use command git --version
+
+----------------------------------------------
+
+1> cmd(shell) and powershell both are specific to window but powershell came after window xp with better features.	
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+Basic cli commands not specific to git
+
+1> 'cd file_path' -> When u r working in a directory(folder) and want to switch specific file in that directory.
+
+2> 'cd ..' -> To get out off the current file or folder and move to it's parent directory.
+
+3> 'mkdir file_name' -> to create a new directory in current working area(main or parent folder).
+
+4> 'ls -Force' -> (WINDOWS SPECIFIC) it lists all the files in current directory including hidden files.
+5> 'ls -a'     -> (Linux specific) does same thing but on Linux and Bash shell in windows.
+++++++++++++++++++++++++++++++++++++++++++++
+
+COMMANDS :-
+
+
+
+1> git config --global user.name "your_name" 
+-> to configure name of user. (--global) is used to make this valid for your local system permanently, so that next time u don't need to do this for next repo creation using local desktop.
+
+2>git config --global user.email "your_email"
+
+3>git config --list 
+-> to see your configurations of git in system.
+
+4> tasklist - list all the tasks running in system with pid and memory uses. (cmd,powershell,linux)
+
+5>taskkill /PID 17756  -> kills ongoing task
+
+6>taskkill /PID 17756 /F -> kill this ongoing task. ( /F means to force to terminate no matter in which state it is)
+
+____________________________________________
+
+1>git clone (url)
+-> To clone (bring) all the resource(files) of public git repo that you mention in url to your current directory.
+
+Note -: updating a file to GitHub is a two step process because git does not update the files every time you keep adding files to git. It just stores or keep them in a stack until we write commit command. It is then when u write commit command that all the files you added or updated yet are finally visible in git repo. It prefers batch operation rather than changing every single updates.
+
+Also commit command does not require to mention any file name (that commit this file) once you write commit, git pushes all the files that were kept in git stack using 'git add file_path' command.
+
+2>git status
+
+a> untracked 
+-> when we add a new file to our directory but don't add it in our git stack (using 'git add "file_path" ') command.
+
+b>modified
+-> When a file once added but after some updation in file, it is not again added.
+
+c>staged
+->As we concluded that adding a file actually to git repo is two step process. When we add the files using 'git add file_path' command but don't commit it, this has a status of "staged".
+
+d>unmodified 
+-> When every file is committed. No files are untracked and modified. 
+
+
+3>
+
+
+
+----------
+*To add your local directory to git, you need to make your local dir a git dir by initialising git in it by """git init""" command. Now your repo is contains .git file(hidden).
+
+* whatever commits u will do will be saved to local machine, because we have not linked our local repo to remote(GitHub web).
+
+*create a repo from GitHub website and dont create any file bcz we want to conserver our local machine state in new repo.
+
+* connect local repo using command """git remote add origin <link>""".
+  Here you are keeping name of your remote repo "origin"(can keep other also) but generally this is followed.
+
+* to verify your remote use command """git remote -v""".
+
+* check name of your branch with command """git branch""". By default when u create git repo via your local machine the you get branch named "master". This is bcz earlier GitHub used to name first branch as "master", but now it has changed it's first branch name to "main". So check your branch name in local machine and if it is master rename it to main using command """ git branch -M main""", otherwise you will be working on different branch. Here this command means that rename current branch to "main".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+TROUBLESHOOTING :_
+
+1> While a commit happens an index.lock file is create and when commit is succesfull it is deleted. IF a commit somehow breaks in mid then index.lock stays and does not delete itself. So we need to delete it manually otherwise we can't make other commits. It will throw message another git process is running.
+
+* is this lock file created for push also
+ChatGPT said:
+ChatGPT
+No, the index.lock file is not typically created during a git push. The index.lock is specifically related to operations that modify the local index (such as git add, git commit, or git reset). The git push command, on the other hand, deals with sending your commits from the local repository to a remote repository and does not modify the local index.
+
+However, during a git push, other lock files might be created on the remote repository to ensure consistency during the push operation, but these are managed by the remote Git server, not your local repository.

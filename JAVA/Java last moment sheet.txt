@@ -1,0 +1,44 @@
+1> Getters and setters - these are the part of encapsulation process. When our variables are public
+then any body can modify it using dot operator. Hence we need to make our variables private. A private variable is accessible to the functions of same class. So we make these setters method public and let user to change value through it. If unwanted change is tried then we can write logic to protect our data. Similarly we can give access to viewer based on certain logic in getter method. Setter method does not return anything.
+
+2>You don't necessarily need to initialise a value to instance variables until you want a specific default value, they by default get some values. But in case of local variable you need to initialise a value to them before USING them(not creating).
+
+3.== operator is used to compare the bits in two variables. What those bits represent doesn't matter.It means that you can compare primitive values to be same or not using this operator but when you use it to compare two objects, it just compares whether they refer to same object or not bcz value of instance variables is a reference to that object and not the object itself. If a smaller data type(byte) stores same value as greater data type(int) then also it gives true.
+
+4>Math.random() returns a number between 0 to 1. If you need number upto 5 then u multiply the return value from 5. It then gives result between 0 and 5. But don't forget to cast that number to integer if you want integer value only. By default it returns double.
+
+5> Exception handling in java
+try {
+    int inputInt = scanner.nextInt();
+} catch (InputMismatchException e) {
+    System.out.println("Invalid input. Please enter an integer.");
+}
+
+e.printStackTrace();
+
+6> To take input in java most preferred class is Scanner 
+next()
+nextLine()
+nextInt().....
+close()
+
+7>Abstract class -: They serve as the base for subclasses. It can contain both abstract and concrete methods. They share the code with extending subclasses. It contains code which are very common and essential but are not of user concern or it may bore people if everything is to written. It can also contain something that we don't want to share with user or hide the internal mechanism. Like for a stack class we don't want user to know that we are implanting Array internally. It can contain all type of method with all type of access modifiers. It can have constructor because extending class will have to give arguments to variable or states to get desired behaviour from it.
+
+8>Interface -: These are not something meant to share code or keep logic abstract from user. Rather it provides a framework that if someone want to have certain feature in their class they will have implement that is write code for all the abstract methods that are declared inside interface. Abstract methods are those which have only declaration and empty body. Classes implementing these interface are expected to write logic of these methods.
+
+9> Often we see an interface (abstract class is not used often..) to be used as a reference and object is of it's implementing class. We know we can't create instance of an interface and abstract class. We can have reference of any type java doesn't care until you have all the methods of interface or abstract class present in the object you are assigning it. You can think of it like java internally checks if all the methods in left side reference is present in the object it is assigned and doesn't care if it contains something extra (But this doesn't mean u can have all the methods but you don't implement the interface). It doesn't mean that method of reference is called, method is called on actual object only. But you can't call extra methods because if this is allowed then it will be totally a mess and polymorphism concept will be in danger. Assume a situation you assigned dog subclass to an Animal class. Now you call bark method on this animal reference. Now someone changes this object to cat, because this is allowed and basis of polymorphism. Then in this situation now animal(cat) will be calling bark method which is not related to it's behaviour. In same way you can think it for function call. If someone consider to use method of subclass which is not present in reference then may be for current situation when they know type of subclass it will work. But if later someone who doesn't know this type of call is made changes the subclass then program will collapse. Because the next person will know that it is normal behaviour and whatever object he puts in right side only method of that is used everywhere and the returned value can  be different based on logic of that subclass method but type of return will be same, so it won't cause any  failure.
+
+
+
+z.> Methods_:
+Integer.parseInt();
+
+y.> loops
+for(int ele: arr);
+
+
+x.> Classes
+
+x.1> ArrayList
+
+x.2> Arrays -: 

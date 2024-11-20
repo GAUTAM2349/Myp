@@ -1,0 +1,12 @@
+1>  let index = s.charCodeAt(i) - 'a'.charCodeAt(0) -> you don't need to remember ascii value
+		of any alphabet or number ever.  and you wont need to create extra memories 
+		like this  let arr1 = new Array(125).fill(0); for alphabets or numbers...
+
+2> If pbm is not so complex, try to avoid using advanced data structures and rely on array.
+
+3> in subsequence pbm order also matters.
+
+4>combination resulting to target
+
+** that leetcode question with multiple things to learn
+5> let mid = Math.floor((left + right) / 2);

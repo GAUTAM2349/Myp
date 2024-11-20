@@ -1,0 +1,18 @@
+node js tutorial Piyush garg
+
+1> Each time we make changes to our server we need to restart it to see the change in frontend..that is why live server is needed.
+  maybe one like nodemon.
+
+2> In express if you add ":" in url means that parameter is dynamic.
+   eg-> app.get("app/users/:id",(req,res)=>{} );
+3> with express we don't need any urlparser module. just use req.params.yourparameter
+4>In JavaScript, the join function is a method available on arrays that creates and returns a new string by concatenating all of the elements in the array, separated by a specified separator string. If no separator is provided, the elements are separated by commas by default.
+
+5> Instead of writing get,post,put and delete request code different for a url, you can write them all at one place by using
+   app.route("url).get().post()..promise like syntax.
+
+6> Must haves in js--
+	a> fs module
+	b> map,filter,reduce
+	c> string operations
+	d> json operations

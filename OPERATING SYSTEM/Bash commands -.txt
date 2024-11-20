@@ -1,0 +1,21 @@
+Bash commands :-
+
+1> ps
+ -> outputs processes running
+
+2> ps aux
+ -> 'a' shows all processes , 'u' shows processes for all users and other details, 'x' shows processes that are not attached to terminal, background processes.
+
+3> ps aux | grep .git
+ -> '|' pipe symbol takes the output of the command on the left (ps aux)
+	and passes it to grep.
+	grep -> it filters the processes list to only show lines that 
+	match the search term ahead (.git).
+	*ps works both on windows and bash (not aux)
+
+4> kill -9 <pid> - kills a process forcefully
+5> kill pid  - kills gracefully
+
+5> image name in context of command lines means  name of executable files associated with a running process.
+
+6> BASH environment does not have full access to windows processes the way native windows commands do. It is designed to work with processes within the bash environment itself , not the broader windows system processes.

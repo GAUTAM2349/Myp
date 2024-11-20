@@ -1,0 +1,6 @@
+css
+
+1> border : border-box -> border should be included in dimensions of actual object so that outer environment does 
+  		not get bothered.
+
+tRoM9hn6PBfnWaR9 mongodb pwd

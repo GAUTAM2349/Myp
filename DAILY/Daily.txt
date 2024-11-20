@@ -1,0 +1,8 @@
+Daily
+
+1> ctrl + shift + esc -> opens taskbar. Their in startup menu u can see the list of apps which starts on system start.
+
+2> rotor - blade of helicopter
+
+3>notepad "C:\Users\hp\OneDrive\Desktop\LEETCODE\Day 02\example.txt"
+cmd is always present in file explorer

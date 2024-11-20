@@ -1,0 +1,112 @@
+1. SOTA (state-of-the-art-model) -  refers to the most advanced and best-performing models in a specific field or task at a given time. 
+
+2. Ian Goodfellow - Founder of GAN (generative adversarial networks) . 2014.
+It included two neural networks, the generator creating
+data and the discriminator distinguishing real from generated data.
+He also highlighted, Improved training techniques do not guarantee convergence of Generative Networks.
+
+// Generative AI is subset of machine learning. It  is a blend of human creativity and machine's precision. It's ability to create new unseen data makes them invaluable in many ai driven fields.
+
+3. KINGMA and WELLING introduced VAEs(VARIATIONAL AUTOENCODERS), a type of generative model in the paper "Auto-Encoding Variational Bayes".
+
+The goal of an autoencoder is to learn how to encode the input data into compact form(latent space) and then decode it back to something similar to original input. Unlike traditional compression methods that rely on manually designed algorithms (such as JPEG for images or MP3 for audio), autoencoders are a type of neural network that learn how to compress and decompress data automatically without supervision.
+
+AUTOENCODERS ARE DOMAIN SPECIFIC. TO DIVERSIFY IT'S DOMAIN IT SHOULD BE TRAINED FIRST IN THOSE DIFFERENT DOMAINS.
+
+Unlike traditional autoencoders, VAEs add a probabilistic layer to model the uncertainty in the data. During training, the encoder maps the input data to a probability distribution in the latent space, and the decoder samples from this distribution to generate outputs. This allows VAEs to generate diverse and smooth outputs, making them a key development in generative modeling.
+
+Latent space refers to a compressed, abstract representation of the data where essential features are encoded.
+
+In VAEs, the encoder outputs the MEAN and VARIANCE of the latent distribution, from which latent points are sampled during the decoding process.
+
+REPARAMATARIZATION :-
+
+//The KL divergence measures how much the learned latent space distribution deviates from a normal distribution, regularizing the model.//
+
+4> Gradient Descent or Steepest Descent :- algorithm to give different parameter to model....Gradient tells the model how much to change to achieve the minimum loss using the values of loss function.
+
+It is defined as one of the most commonly used iterative optimization algorithms of machine learning to train the machine learning and deep learning models. It helps in finding the local minimum of a function.
+
+Gradient descent is an optimization algorithm used to minimize the loss function in machine learning models. It iteratively adjusts the model parameters in the direction of the negative gradient of the loss function, thereby reducing the error. Various variants exist, such as Stochastic Gradient Descent (SGD) and Mini-batch Gradient Descent, each with different approaches to updating parameters.
+
+** BACKPROPAGATION :-
+Like normally if u think, it can be like see the value of loss function and according to that gradient descent suggest the change. But this happening every time is waste of time and mundane. Here comes BACKPROPAGATION, it changes the past inputs according the outputs of current or observing that certain past inputs are not able to produce result many times.	
+
+
+5> DCGAN (Deep Convolutional GAN) - made rules for creating stable and effective AI image makers using patterns and regularities. AI can also focus on specific part of image.
+
+6> CycleGAN ( Cycle Consistent GAN) -
+
+7> BigGAN ->
+
+
+
+
+
+8> Generative model uses joint probablity whereas Discriminative model uses Conditional probablity ( probability of x given y).
+
+
+9> RELU (Rectified linear unit).
+
+
+
+
+
+*
+*
+*
+*
+*
+*
+
+MACHINE LEARNING :-
+
+1> Types of Machine Learning 
+	a> Supervised learning -> Model gets question and answer both (labelled data) 
+	   and is supposed to learn from it.
+
+	b> Unsupervised Learning :- provided data only (unlabelled), model is supposed 
+	   to discover patterns to give answer.
+
+	c> Semi-Supervised.
+	d> Reinforcement Learning :- Learn by interacting with an environment. Like by playing game few times we can discover different strategies.
+
+
+
+
+======================================================================
+
+GAN :- Models the JOINT PROBABILITY DISTRIBUTION of both input features and output features.
+
+Primary Goal :-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

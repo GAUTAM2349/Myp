@@ -1,0 +1,4 @@
+daily jargons  
+
+1> installer wizard - software utility designed to guide users through the process of installing software on their computers.
+2> wizard -  in the context of software, it refers to a tool or feature that guides users through a series of steps to complete a specific task.

@@ -1,0 +1,12 @@
+What Does Application Suite Mean?
+A application suite is as a group of different but inter-related software programs that are combined and packaged together.
+
+Advertisements
+An application suite generally consists of two or more software programs delivered within a single executable and installable file.
+
+An application suite is also known as a software suite, utility suite or productivity suite.
+
+Techopedia Explains Application Suite
+An application suite is designed to merge different software with related functionality into a single file to provide economical software applications for individuals and organizations. An application suite contains software from a single software publisher and encapsulates it into a layer of executable program, known as the installer. The installer enables the installation of the bundled applications individually or the entire software stack can be installed at once.
+
+One of the best-known software suites is Microsoft Office, which includes Word, Excel, PowerPoint and other programs depending on the version.

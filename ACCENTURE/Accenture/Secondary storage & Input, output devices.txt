@@ -1,0 +1,38 @@
+
+MORE AND MORE QUESTIONS FROM """BIOS"""
+
+
+
+In this module, you will learn briefly about secondary storage, input and output device and also features of BIOS and Hard drives.
+
+In modern computing, the hard drive as the face of secondary storage. Most machines package hard drives as intenal storage devices, but you can also connect them via USB or FireWire.
+
+Externally, internal hard drives are placed inside your computer. Unlike an external hard drives are not portable and can only be used by the computer, which is connected.
+
+There are two kinds of interal hard drives.
+
+1> Mechanical HDD.
+2> Non-Mechanical SSD(solid state drive).
+
+
+HDD - These are the more traditional kind. The disc rotates to retrieve and store information, so the fast rotational speed of hard drives can access the data faster.
+These are the more traditional kind. Hard drives are competitively priced and can provide an ample amount of storage pocket. 
+
+External Hard drives are not located inside the computer like internal hard drives. Relatively, they deliver a means for external  portable storage by connecting to your computer via USB ports. Extrnal hard drives come in different capacities and some even have the facility to connect to the wifi and allow the storage of information from multiple computers on that network.
+
+
+
+INTERFACES(yellow lines at chip, pendrives that connect to computer) TYPES - HDD
+
+ ATA (also called IDE) is a common interface that was used in many personal computers before the emergence of SATA. It is the least expensive of the interfaces -:
+
+  1> IDE - Integrated Drive Electronics (or ATA)
+  Integrated drive electronics is also called advanced technology attachment(ATA). It is an early drive controller interface that connects hard disk drives and computers. A 40 pin connector is used as an IDE interface. 
+
+  2> ATAPI - AT Attachment Packet Interface is a standardized slasher hardware interface for CD, DVD tape and other removalble drives.
+
+  3> PATA - Parallel ATA refers to parallel variant of an interface with the ATA Drive controller.
+
+  4> SATA - Serial Advanced Technology Attachment refers to ATA interface serial version. A 7-pin connector is used for SATA interface. 
+  
+  5> SCSI - Small Computer System Interface is an interface for the Drive controller with a maximum of 15 drives. It can connect both internal and external drives. 

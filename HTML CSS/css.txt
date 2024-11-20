@@ -1,0 +1,110 @@
+css
+
+1> max-width -> if viewport size is greater than max-width then size of image is as specified but if it is less it adjust it's size according to the viewport size and not remains hardcoded.
+
+2> rem -> html is the root element of all the tags within a page. By default browsers keep font size as 16px inside root element that is html tag. If you specify size in rem suppose it is 10rem then actually it is equivalent to 160px(16px * 10). You can also change this default size inside html tag. But if u specify the size in px in	
+		html tag then if a user changes default font-size of his browser then they will see 
+		no change bcz we have hardcoded the default font-size. To tackle this we keep the def-
+		ault size in percentage. So whatever the font-size users keep we take equivalent percentage
+		change in all the page hence users also feel change in font-size. For us best size is 
+		10px for root element bcz it makes our calculation easy. 16/10 = 62.5.
+
+3> button vs anchor ->a button is for some action to be performed like submission of a form or liking
+		     a page whereas anchor tags are for navigation to some other pages.In anchor href
+			= '#' means empty link.
+
+4>Microcopy in HTML refers to the small bits of text on a website or application that help guide users through the interface and enhance their experience.
+
+5> Alt text of images are not only for blind people but also for search engines.
+
+6> If an image is larger than its grid cell, it can cause the column to expand to fit the image.
+
+7> A tint is a color made lighter by adding white, while a shade is a color made darker by adding black.
+
+8> When we have a background color, we often use padding to ensure the background color extends beyond just the content, creating a more visually appealing and spacious look by providing a buffer between the content and the edges of the container. This enhances readability and aesthetics by preventing text or other elements from touching the container's border.
+
+9> It means that to apply padding effectively to an inline item (like <span> or <a>), you need to change its display property to inline-block. This allows the item to accept padding and margins like a block element while still flowing inline with other content.
+
+10> A transition sets the duration for an element to change from its current state to a new state and allows specifying which property changes to animate, such as `background-color` or `all`. Note that the transition is always applied to the element's original state.
+
+11> Having box-sizing : border-box; doesn't works for anchor tags .. and inline elements does not respect margin and borders. Know 	
+    more abt this.
+
+12> Block level element obeys margin,padding perfectly. Like if grid cols are 1fr 1fr and if 1st col contains a heading, no matter
+    how much font-size is, 1fr and 1fr cols are maintained which is unlikely to happen in case of inline elements.
+
+13> Their should only be one h1 per page
+
+14> Adding many items to same container will work but having modular components, ie. having personal container(same as previous one)
+	is good bcz it makes the components self contained.
+
+15> heading tags should be used when we are actually introducing sth next. Other wise we should use generic tags like <span> or <p> is      also fine but span will be better.
+
+16> Don't forget to make span display block if it is serving purpose of block
+
+17> When text is of smaller length and in uppercase than increasing letter spacing can be a good decision
+
+18> By default  flex items get align-items:stretch; So whaterver the height of the flex container is, image will that space
+   until you change it's alignment. Note that changing the width of flex container will have no effect bcz to change the width of content
+	you will have to change the width of content itself and not flex container.
+
+19> we don't keep line-height or letterspacing in px or rem or anything it's just number. Bcz if you specify the line-height in px
+suppose 2 px and font size is 10px. So next line will overlap , bcz it is instructed to start from 2px from starting of previous line and not the end of previous line. That is why their is only number which specifies how many times of current spacing you want to increase or decrease. Sorry not in case of letter spacing it happens only with line height. See the actual thing is that line height is the property which means the total height of the line and not the space between two lines. So if you specify height of the line lesser than the font size it will certainly will overlap. Whereas letter-spacing is the space between two characters.
+
+
+20> An inline element can't have vertical(top-bottom) padding,margin..
+
+21> When u give a div border-radius and it has some content on top or bottom then border-radius does not apply to it. To tackle this we se overflow:hidden. 
+
+22> box-shadow: right(l if -ve) bottom blur spread color; It gives border to a div. Mostly used in cards as we used in meal card. If u set it inset then it applies inwards of box.
+
+23>   the !important declaration has a higher priority than inline styles. In CSS, the order of precedence from lowest to highest is generally:
+
+User-agent styles (default browser styles)
+External and internal (embedded) stylesheets
+Inline styles (styles applied directly to an element using the style attribute)
+!important declarations
+
+24> CurrentColor is a property which can be used to give color that is already color in div. This helps to generate dynamic ui. ie. if color is not hardcoded then if color of text is changed then other color can also be changed.
+
+25> logo should be kept inside anchor tag so than when sb clicks it cause an action.
+26> For a logo height is considered to be given manually. If we don't want image to loose it's aspect ratio then, one will automatically set other. So for logo height is sth that we will implicitly want to give, although giving width also works. If u give specific height or width to image then outer div is not compulsory or any dimension related issue for image.
+
+27> In flex box, flex items(img) by default stretches all the box from top to bottom which looks ugly. We need to set it top, bottom, or center if we don't want this behaviour.
+
+28> When their are multiple images in a row, if you give them width then if the aspect ratio of all the images are different means although all of them will have same width, but height for them will differ which looks ugly (remember featured section of omnifood).
+Hence we set height, and let width to change variably.
+
+29> when content is greater then size of it's container then content overflows. To hide this overflow we use overflow: hidden and to keep this content inside container by giving scroll bar we use overflow:auto.
+
+30> clientHeight and clientWidth is another similar property which exclude border and scrollbar. But when scrollbar appears it usually appears inside the content itself compromising actual padding and texts width. So clienWidth will ofcourse not greater than but can be actually less than total width if u consider scrollbar.
+
+31> line-height of 40px means 20px above and 20px down.
+
+32> overflow:auto does not show scroll bar if content fits inside container. Overflow:scroll shows scrollbar although content fits inside container. But this behaviour differs in different browsers if dev tools is opened. Like if you open dev tools in chrome scroll bar appears to be thin line rather than usual appearance.
+
+33> offsetWidth and offsetHeight are properties of javascript(not usable in css file) for Dom elements to get their width or height resp including padding scrollbar or border (not margin). It's return type is integer and is readable property only. 
+
+34> window.scrollBy(x,y) and window.scrollTo(x,y) -: -ve +ve
+
+35>CSS scroll-snap-type: y mandatory; when u scroll in y direction it doesn't scroll smoothly rather like a snap it suddenly goes from one to another. we can also do it for x direction.
+
+36> 3d layouts
+37> offsets
+38> horizontal scrolling map
+
+39> What does it mean to give top:50px to a container whose position is relative?
+-> It means that it's top will start from 50px later than where it was
+   supposed to start. you can use it to detach nav bar from top of body.
+
+40>The colors #f9f9f9 and #d9d9d9 are represented in hexadecimal (hex) color notation, commonly used in web design and development. In hex color codes, #RRGGBB format is used.
+
+41> positioning in css is based on four values top,left,rig... 
+   a> relative means to position an element relative to it's normal position. Other content will not be adjusted to fit into any gap left by the element.
+   b> fixed means to position an element based relative to viewport. It is fixed at one place.
+   c> absolute is positioned relative to nearest positioned ancestor.
+   d> sticky remains at normal position but at the time of scrolling when it reaches specified top,bottom,right,left it sticks their on scroll...to be worked for left to create dynamic layout
+
+101> Mediaqueries
+ These are used to change the dimension or layout of a page at a certain breakpoint which is the dimension in which the layout of the page changes or is undesired. Note that although you can use rem here in media(max-width:..) but you shouldn't bcz some of the browsers have bug in responding to rem unit in mediaquery. You can use to give everything else rem but only breakpoint width inside media function argument should be in em.	
+

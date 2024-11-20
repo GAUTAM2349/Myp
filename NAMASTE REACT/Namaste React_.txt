@@ -1,0 +1,102 @@
+Namaste React:_
+
+8> Exploring the world -: bcz we r going take live data by making api calls and not just fetching data from constants file.
+
+* We also discussed monolithic vs microservices architecture. In microservices ui,backends are split into different service...work on it
+
+when we were using use state to search text in input then when each letter was typed component using that useState was rerendered. When search was clicked filtered data was displayed in screen. But also the restaurant variable was being updated with new filtered data, hence when again sth was searched it didn't searched in all restaurants but newly filtered list of restaurants..fix this..
+
+We are going to take data by making an api call and not from constants, so question is should we rerender page every time their is update and make fresh api call to fetch restaurant lists or just when first time loading page that time only. Ofcourse second..
+
+Their can two way of rendering page, one first to make api call for restaurants and then wait for it's response (around 300ms) and then render it (around 200ms) which is 500ms to render or show sth on screen. Second is to first display some initial content on screen, then make api call and when response is fetched then update ui. Ofcourse we don't want to show latency to our users hence first we will do initial rendering and then update ui.
+
+what is strongest feature of react - reconciliation.
+
+*useEffect is second most important hook in react. It is a named export from react not default.
+
+*At the end hooks are just functions
+
+* useEffect take two arguments first a callback function which is called by react... Second a dependency array. By default useEffect is always called after render and only on first rendering. Because useEffect is by default supposed to called once. But if their is some state in dependency array then when that specific state is changed then again useEffect will be called. But then also first rerendering will be done and then useEffect will be called. Rerendering happens always when state is changed or props is updated. But what sets useEffect apart that it is called only once or when user wants on specific state change.
+
+* CORS is cross origin..  extension it allows to make https call from local host in browser.
+
+* since we want to make api call to get restaurant lists once only we will use useEffect with empty dependency array.
+
+* For better reading we will not make directly call fetch inside callback fn of use effect rather make a getRestaurants() fn outside and call it inside the callback function. Because we will need to do more things like updating initial state of restaurant when data is fetched.
+
+
+
+See when a function returns promise, it doesn't mean that all the places it is used will wait until promise is resolved and also doesn't mean that they will run but when promise will be resolved they will be updated. Both of these are wrong. You deliberately need to indicate that these lines are to be executed only when promise is resolved using THEN.  "then" doesn't pause anything. It only a way to inform or you can say to attach sth to promise to be done when it is resolved in a sequence of then.
+
+Earlier we used to make asynchronous function by 
+...........
+
+* When a page load and their is nothing, blank page, and suddenly a page is populated then it creates a bad user experience. We want a user to have idea that certain layout is coming. This is done using shimmer effect.
+
+*ALWAYS do optional chaining ..2:44:00
+
+*It is not the case that you can write anything inside jsx by using parenthesis. You can write only expressions, ie. which evaluates to something, not statements. Although their is trick to do this also. 2:51:00
+
+* the diff algorithm is common to react and react native so it is written in react core. react-dom contains many code including updating the exact node of dom tree in browser.
+
+* although we are rendering through filteredRestaurants, we took allRestaurants   state also, because we need a state which always contains all restaurants because every time we will filter through global data not previously filtered one. 
+
+*********************Lecture 9*************************
+
+* If we don't give second argument ,ie. dependency array then it will be called in every re render. So dont forget to give atleast an empty dependency array.
+
+* React says never create a component inside a component. Because in this case every time parent component will be called , child component will be recreated new. Note : we are not talking about nesting or compsing components. That is ofcourse to be done.
+
+* Never create a state inside if else because, it will lead to inconsistencies. React likes only concrete things.
+
+* Never create states inside loops.
+* USESTATE is hook(function) to create local variables inside components. Normal variables update themselves on change but don't update everywhere they were used. But state variables does so.Also setfunction saves us from writing some code to change the value of variable. Also react also blocks use of normal variables inside components because it does not want to give any bad experience in it's presence.
+
+* You can use  multiples useEffects.
+* It is a trend to keep images by creating a subdirectory, "assets" insid "src" directory.
+* you can import this image by using normal import by giving it's path.
+* but cdns are great places to host images because they are faster and 100%uptime.
+* In cdn we can not optimize images after it comes to our browser (like parcel does for us). So we keep optimized images in cdns.
+* for easy shimmers don't use packages, you can create on your own atleast as fresher.  Although the name of package is (react-shimmer).
+
+* to create 10 shimmers he did only, 
+	<div className="restaurant-list">
+	 {Array(10).fill("").map(e=> <div className="shimmer-card"></div>)}
+	</div>
+// not restaurant list from constant or api, he just kept same name restaurant-list 30:40
+
+* Don't use forms for every single thing. Use it when thing really get complex. Like multiple forms are there and all of those have different styles, regex check, input patterns... Package name is formik.
+
+* Name of episode is "finding the path" because we will route every urls to a page using routing. And for this we are installing a package "react-router-dom". This routing will be done using external packages in frontend. Their are many routing packages we are using "react-router". Go read react-router documentation, their are many types of routers in it, see the uses.
+
+* Different routing packages expects different routing syntax, we are not concerned about it. In this case it is said that write routing logic below the components, because since code is executed line by line so if router invokes a component before then it will not be available. But i think since they are using arrow function otherwise like i m using normal function so my code will run even if i write routing logic first. But ofcourse we will maintain consistency and follow first approach.
+
+* To create route we use a function "createBrowserRouter" exported as named export by react-router-dom. It takes an array as argument where each element is an object which contains code for different url paths. like this 
+{
+  path: "/",
+  element: <AppLayout/>,
+  errorElement: <ErrorComponent/>
+}
+
+* Also we will have to  pass this functions return to root.render because eventually root renders everything in react. But root.render takes component (i don't remember abt raw react). For this react-router-dom provides us with a Component "<RouterProvider />". It takes a prop of returned of 'createBrowserRouter". so it becomes "<RouterProvider router={appRouter} />", where appRouter is return of createBrowserRouter. 
+
+* Extra revision :- whatever we pass to prop of component those all are wrapped into an object and is sent as argument to their function call. So we name different arguments to make it easy to destructure it.
+
+* Also this react-router-dom provides us a hook (eventually function) which catches details about the error ("useRouterError")
+
+.
+.
+.
+.
+
+* Their are two types of routing :-
+   1> client side routing
+   2> server side routing
+
+* Earlier we used to use server side routing in which for each url mapping a request was sent to server to get the respective page to be displayed.
+
+* In server side routing we make spas(single page applications) because all the pages are loaded at once in first rendering and based on routing when certain url mapping is invoked react renders pertaining component which it has already kept with it self. This is not react specific it can be done anywhere client side routing is happening.
+
+* If we use anchor tag then page is bound to reload, this is default behaviour of html. So react-router-dom provides us with a component called "Link" which does same thing but without reloading page. I think it just goes into router configuration when it encounters <Link> and load component it is mapped to.
+
+	

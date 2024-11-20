@@ -1,0 +1,25 @@
+* Field and column is same thing. Record and row is same thing.
+* Spaces aren't allowed in name of database and tables, so underscore is used.
+* DBMS means database management system. It can be anything which provide facility to manage a databas(which is implicitly storage).
+
+* RDBMS are dbms which uses table based structured data storage. SQL is core of all almost all RDBMS and each rdbms(like MySQL,postgres,sql server,oracle) extend this in their own way. But sql part remains the core.
+
+
+*SQL Standard Focus: The SQL standard focuses on defining the syntax and behavior for querying and manipulating data within a single database (e.g., SELECT, INSERT, UPDATE, DELETE, etc.). It does not specify commands for database management tasks such as listing all databases on a server.
+
+*There isn't an "original" or standard SQL command to list all databases because the SQL standard does not define such a command. SQL (Structured Query Language) is a standardized language used for managing and querying relational databases, but it leaves many details, including administrative commands like listing databases, to be defined by each specific database management system (DBMS).	
+
+
+*semi-colon tells sql rdbms that command has ended. without semicolon it assumes command will be continued in next line.
+
+*to create 
+
+
+
+COMMANDS :::-
+
+1> create database database_name
+  -> not table but database name
+
+2> use database_name
+  -> to instruct database to use this database. Because it will contain multiple            databases.  

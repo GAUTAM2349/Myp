@@ -1,0 +1,17 @@
+Infrastructure overview :-
+
+  Maintenance for:-
+   1> Hardware :- Servers, data centers, switches, on-site IT equipments, etc.
+   2> Cloud computing :- On-site facilities, public, private and hybrid cloud technologies,   training programs.
+  3> Software :- CRM, ERP, Collaboration applications, etc.
+  4> Networking :- LAN, WAN, and cybersecurity devices, including firewalls.
+  5>Human processes :- Accessing and processing essential information to effectively manage   these systems and services.
+
+Bussiness leaders usually need to rely on skilled technicians to understand the nuances of heritage IT infrastructure. However, today, the management of IT infrastructure has developed to such an extent that even the most qualified worker can address crucial obstacles with simple learning programs.
+
+
+
+https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YTE0ODRjYjctMGNiZi00MTQ1LWI4NTAtZmNlNzZjMjNjNjFh%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522e0793d39-0939-496d-b129-198edd916feb%2522%252c%2522Oid%2522%253a%252291b57ba2-3415-4ed9-ba18-a9c09d8d0a98%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=4e1ad65f-d913-48ab-921e-f1b60d39c55c&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true
+
+Meeting ID: 258 473 160 599
+Passcode: Yd2i3N

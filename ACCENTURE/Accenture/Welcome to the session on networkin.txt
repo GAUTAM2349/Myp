@@ -1,0 +1,290 @@
+Welcome to the session on networking and telecommunications platforms. You will learn why network understand LAN and WAN. understand topologies.
+00:00
+introduction to TCP/IP protocols. Print services. A print server or printer server is a device that connects printers, client computers over a network.
+00:13
+communication services. Transports information electronically For example, a telecommunications service provider. Mail Services. A Mail server is a program responsible for receiving, routing and delivering email. Internet services.
+00:25
+Internet service provider is a company that provides access to the internet. A computer network refers to a group of two or more computer devices
+00:42 
+linked by a means of communication that enables computers to communicate electronically. A computer device on a network is typically called anode that is linked
+00:51
+together and enables the exchange of data between nodes by connecting media. Connections may either be built via cable media, such as wires or via Wi-Fi.
+01:00
+Generally, network LANs have a small number of computers attached to them (between two and 25). There is not an absolute limit.
+01:11
+However, the networks are designed to prevent outsiders from connecting to the network using security settings that require modification for the network.
+01:19
+Since businesses and homes normally build LANs for their personal use, LANs have numerous applications, including file transfer and network resource sharing, (like software and hardware).
+01:28
+
+
+They are often used competitively to play video games (called a LAN party). Since the fast network enables players on the network to play games
+01:40
+without experiencing game delays (or lag time) wide area networks, (WANs) cover large geographical distances, including entire regions, states, continents or the world as a whole.
+01:49
+The internet is the most universal, and potent WAN computers use public networks such as telephone systems, private cable systems or leased lines or satellites to connect to WAN.
+02:03
+Bus topology is a type of network in which a single cable is connected to every computer and network device. In star topology
+02:14
+All the systems are linked via a cable to a single hub. This hub is the central node, which links the central node to all other nodes.
+02:24
+Ring topology is a topology in which the ring is created by each computer linked to exactly two other computers. In nature,
+02:32
+The message that passes is unidirectional and circular. Application layer allows client application programs to access other layers and defines the protocols used for data exchange by applications.
+
+
+The message that passes is unidirectional and circular. Application layer allows client application programs to access other layers and defines the protocols used for data exchange by applications.
+02:40
+one of these application protocols is the hypertext transfer protocol (HTTP) that is used to transfer webpage data. Transport layer responsible for supplying the application layer with connectivity and packet services .
+02:54
+This layer contains TCP and other protocols. Internet layer responsible for addressing, routing and packing data packets called IP datagrams. The Internet Protocol IP is one of the protocols used in this layer.
+03:09
+The internet layer, also known as the network layer or IP layer, accepts and delivers packets for the network. This layer includes the powerful internet protocol (IP), the address resolution
+03:24
+protocol (ARP) and the Internet Control Message Protocol (ICMP). The TCP/IP transport layer ensures the efficient and error free delivery of packets by exchanging receipts of data reception
+03:36
+and forwarding missing packets. It is known as end to end contact transmission control protocol(TCP) user datagram Protocol (UDP) and Stream Control Transmission. Protocol
+
+
+
+are protocols for the transportation layer at this level (SCTP), the secure end to end service offered by TCP and SCTP. UDP offers untrustworthy datagram operation.
+04:03
+The website blocks are Web pages that are HTML formatted, linked and accessed via HTTP links called hyperlinks. These links are electronic links that link related pieces of information
+04:17
+so that users can quickly access the desired data. Hypertext provides the benefit of selecting from the text a word or phrase, and thus accessing other pages that provide
+04:29
+additional information relating to that word or phrase. An online address called a uniform resource locator is given to a web page.
+04:39
+You are through a specific collection of web pages belonging to a particular URL is called a website. The internet is a global network infrastructure
+04:47
+that enables the global communication and access to data resources through a comprehensive collection of private, public, industrial, academic and state owned networks.
+
+It is regulated by organizations like the IANA (The Internet Assigned Numbers Authority) The terms internet and global websites sometimes use each other
+05:07
+interchangeably, but they are not exactly the same. The web applies to the global communications system, including hardware and infrastructure. While the web is one of the internet services, the main aim of an internet
+05:17
+is to help employees communicate securely, store information and cooperate. Modern intranets use social features, allowing employees to develop profiles and provide comments and postings.
+05:30
+And intranet is primarily used by companies as a means of sharing business updates, saving files, connecting employees and working across borders with teams or departments.
+05:43
+The majority of intranets are used to boost productivity and employee involvement, or just to give a voice to the employees. An extranet is a private network accessible only to approved users.
+
+It is regulated by organizations like the IANA (The Internet Assigned Numbers Authority) The terms internet and global websites sometimes use each other
+05:07
+interchangeably, but they are not exactly the same. The web applies to the global communications system, including hardware and infrastructure. While the web is one of the internet services, the main aim of an internet
+05:17
+is to help employees communicate securely, store information and cooperate. Modern intranets use social features, allowing employees to develop profiles and provide comments and postings.
+05:30
+And intranet is primarily used by companies as a means of sharing business updates, saving files, connecting employees and working across borders with teams or departments.
+05:43
+The majority of intranets are used to boost productivity and employee involvement, or just to give a voice to the employees. An extranet is a private network accessible only to approved users.
+05:54
+These licensed users can include business partners, providers and even some customers. They can share information using the extranet without accessing the main network of the host company.
+06:06
+An extranet is like a safe file room somewhere outside the premises of the company. Only those who have provided a key can access the filing boxes and browse them.
+06:17
+You should now be able to understand what is Network. LAN &amp; WAN technologies. Understand about protocols. information sources, technological books, genetic technology,
+06:28
+web sites, genetic security, web sites. Images from internet edited. Thank you. Have a happy learning.
+06:
+
+
+
+LECTURE - 2
+
+Welcome to the session on data management and storage. After completing this unit, you will be able to understand Disk storage, storage basics, storage architecture, SCSI devices,
+00:00
+RAID concepts, Tapes, DAS - NAS -SAN, A storage device, is a piece of hardware used by a computer to save, carry and pull data.
+00:16
+It may maintain and retain information in the short or long term. It may be a device inside or outside a computer or server.
+00:27
+Other storage device items are storage medium or storage media. A storage device is one of the basic features of any computer device.
+00:35
+Almost all data and applications are stored on that computer, except for hardware firmware. It comes in different shapes and sizes, depending on your needs and functionality.
+
+Raid contains groups or sets or Arrays. A combining of drivers make a group of disks to form a RAID array or RAID set.
+00:55
+It can be a minimum of two number of disconnected to a raid controller and make a logical volume on more
+01:03
+drives can be in a group. Only one Raid level can be applied in a group of disks. Raid are When we need excellent performance
+01:08
+according to our selected raid level performance will differ. saving our data by fault tolerance and high availability. Software RAID. when storage drives are connected
+01:17
+right to the computer or server without a raid controller. Raid configuration is managed by utility software in the operating system, which is referred to as a software
+
+
+
+RAID setup. Numerous operating systems supported configuration, including those from Apple, Microsoft and Linux. Hardware RAID, In a hardware raid set up the drives connect to a Raid Controller card
+01:37
+inserted in a fast PCI Express (PCI-e) slot in a motherboard. This works the same for larger servers as well as desktop computers.
+01:51
+Many external RAID drive enclosures have the Raid Controller card built into the drive enclosure. A tape drive is a peripheral hardware device that reads and writes
+
+
+data into nonvolatile magnetic tapes. A magnetic tape be similar to a conventional audio cassette tape contains a magnetized coating on a thin plastic strip, which data is written on.
+02:11
+Unlike dynamic and random storage mediums such as hard disks and flash drives, a tape drive operates by indexing and sequential access.
+02:23
+You have to run a tape from beginning to the end to perform, read or write operation. This means that data is written to the tape in one continuous stream
+02:32
+To read a specific piece of information. The tape must have passed all preceding data to access it. Quite simply, a deep drive is like a cassette recorder that stores large volumes of digital data. Due to its cost competence and long shell life, tape drive makes a popular device for backup and archival purposes.
+02:51
+AIT (Advanced intelligent), AIT 8MM across and uses helical scanning technique and the MIC (memory in cassette) technology to provide increased access.
+
+It also supports high data transfer rate up to 78 MB/sec and maximum storage capacity of 500 gigabytes compressed using ALDC (adaptive lossless data compression) technologies.
+03:14
+DAT (digital audio tape) DAT is 4MM across and offers over 40 gigabytes of storage at a data transfer speed of about 5 Mb
+03:28
+per second and is optimized for high volume backups. DLT (Digital Linear Tape), DLT uses a technique to write data onto the tape in 128 or 208 linear tracks.
+03:37
+DLT cartridges can contain around 70 gigabytes of data with compression. super DLT, A new DLT variant supports tape capacity up to 300 gigabytes
+03:49
+
+(SDLT 600) and transfer data at speeds up to 36 megabytes per second. LPO (Linear Tape-Open) LTO uses an open format technology
+04:00
+that provides compatibility to various storage media products. It supports the capacity up to 6.4 terabytes and transfer rate od 540 megabytes per second.
+04:11
+Different raid organizations were defined based on different combinations of the two factors of granularity of data interleaving, (striping) and pattern used to compute redundant information. raid level 0 has no redundant data
+04:23
+and hence has the best rate performance at the risk of data loss, But it does use striping to improve read/write performance.
+
+Raid Level 1 uses mirrored disks. Raid Level 2 uses memory style redundancy by using hamming codes, which contain parity bits for distinct, overlapping subsets of components.
+04:45
+Level 2 includes both error detection and correction. Read level 3 uses byte- level data striping and a single parity disk relying on the disk controller to figure out which disk has failed.
+04:57
+Raid levels 4 and 5 use block-level data striping with Level 5 distributing data and parity information across all disks. Direct attached storage is a legitimately basic,
+05:09
+low maintenance, low cost solution where the storage system is a part of the actual host computer or connected directly to the host computer.
+
+This could be as simple as an external hard drive, and it's the opposite of network storage, where workstations and servers connect through a network.
+05:29
+DAS is used in many IT infrastructures, and larger DAS storage units can accommodate multiple disks in one enclosure. However, for some business applications requiring greater flexibility and data
+05:38
+sharing across teams, DAS's ability to grow and scale is limited, especially if you expect to see a lot of business growth over a short period of time.
+05:51
+Best use case scenario: DAS is best for small businesses that only need to share data locally have a defined non growth modest
+06:01
+to work with and have little to no IT support to maintain a complex system. NAS is a file level data storage
+
+to work with and have little to no IT support to maintain a complex system. NAS is a file level data storage
+06:10
+device attached to an TCP/IP network, Typically, Ethernet. it usually uses NFS or CIFS protocols, although other choices like HTTP are available.
+06:17
+Network attached storage offers committed file serving and sharing through a network. It increases performance and reliability, with features similar to raid  and swappable drives designed for higher multi-drive workloads. NAS storage is also a noble solution for consolidating storage systems from DAS -Plus, having one centralized
+06:38
+shared storage system will save money in the long run. Eliminate confusion and increase reliability in case of system failure or an outage. NAS is known as a top choice
+06:50
+for SMBs. Best use case scenario: NAS is perfect for SMBs and organizations that need a least maintenance, Reliable and flexible storage system that can quickly scale up
+07:01
+as needed to accommodate new users or growing data. A storage area network is a committed High-Performance storage system that transfers block level data between servers and storage devices.
+SAN is typically used in data centers, enterprises or virtual computing environments. It offers the speed of DAS with the sharing, flexibility
+07:27
+and reliability of NAS. SAN storage is a very sophisticated option that's meant to support complex mission critical applications. Best use case scenario:
+07:36
+SAN is finest for block level data sharing of mission critical files or applications at data centers or large scale enterprise organizations.
+07:47
+Database management software (DBMS) is used in a database environment to store, manipulate and handle data such as formatting, field names and record and file structures. To satisfy their business requirements,
+07:56
+Users can create their own databases using Adobe DBMS, for example, For Microcomputers, dBase was one of the first DBMSs. A DBMS program   usually uses SQL queries in order to communicate with a database. This receives an order from a database administrator (DBA) and prompts the machine to take the action it needs.
+08:22
+These instructions may refer to the loading retrieval or alteration of existing system data. Database software exists primarily to protect the data in the database   and to ensure that it is both precise and reliable. Functions for database software include. Data storage, data backup and recovery. Data presentation
+08:45
+and reporting multi-user access control. Data security management. Database communication. You should now be able to understand about storage devices, concepts of RAID,
+08:56
+understand about storage technologies, information sources, technological books, genetic technology, web sites, images from internet edited. Thank you. Have a happy learning.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CLOUD COMPUTING
+
+
+
+Welcome to the session on cloud computing. By the end of this unit, you should be able to: define cloud computing, define cloud service models, define deployment models.
+00:00
+Cloud infrastructure offers On-Demand access to computing resources, applications, servers, physical servers and virtual servers, data storage, development tools, networking capabilities and more hosted in a remote datacenter
+00:15
+operated by a cloud service provider (or CSP). for a monthly subscription fee, The CSP makes these services available or bills them, according to use.
+00:30
+Self-service on demand: this feature gives users full control over the resources they have provided, they should be able to power up,
+
+
+
+increase decrease, shut down or modify any other characteristics of their resources without requiring assistance from the service provider. Ubiquitous network access:
+00:49
+This feature refers to the widespread availability of broadband access to the internet. In addition, the cloud should be accessible through various devices such as mobile phones, tablets, laptops and workstations.
+01:00
+Location independent resource pooling: cloud computing clients come from around the world. Service providers should be able to serve each of these customers equally well.
+01:14
+The quality of the services or resources consumed by the client should not depend on the location of the client. Service providers should be able to dynamically pool resources
+
+
+
+
+that can be geographically separated in order to create the illusion of a single unified service to the client. Rapid elasticity: The cloud service
+provider should be flexible in the provision of resources to meet the fluctuating demands of its customers. Pay for use: Expanding the concept of utility computing, customers of cloud
+01:44
+computing service providers are charged only for the resources they use. Cloud computing is delivered via three models. IaaS (migrate on it)
+01:55
+PaaS (build on it). SaaS (consume it). Some sample companies offering one or more of these service models are listed below.
+
+
+
+
+
+While some companies services are clearly specific to a specific model, (for example a Ms Office 365), some cross multiple borders. Microsoft Azure is primarily a PaaS service model,
+02:17
+but its virtual machines (VMs) are IaaS services. Amazon Web Services (AWS) West is primarily an IaaS service with its EC2 and S3 offerings.
+02:29
+However, AWS has begun offering Elastic Map Reduce (EMR) with the necessary components for large data scientists and developers to develop MapReduce and spark programs.
+02:41
+Sample Service Providers and services, Amazon Web Services, EC2, Google Gmail App Engine, Cloud Storage, Microsoft Office 365 Exchange Online, SharePoint Online,
+02:53
+Windows Live, Hotmail, Windows Azure, Salesforce Force.com, Rackspace. Software is hosted as a commodity in this model that can be accessed on the internet by the user.
+
+
+
+Customers need not worry about updates and the underlying infrastructure needs. Service vendors are responsible for maintenance. However, in most cases, clients do not have the freedom
+03:28
+to customize other than by configuring options. Customers can reduce their upfront costs and pay for the resources they consume instead. (It should be noted that both Gmail and Hotmail have both free service
+versions and enterprise versions to help companies manage their mails). Service offers and manages diverse development environments for application developers, software developers, web developers and data scientists,
+03:52
+enabling them to focus on their core activities rather than on maintenance of hardware, slash software and infrastructure. Tools can be easily given and torn down for each design,development, testing and deployment process. This model provides dedicated virtual machines to clients. Allows client full control over the parameters of the machine instance.
+04:17
+Users can provision and configure the following through a web based console. Server types, CPU cycles, operating systems, storage capacity. Network Infrastructure, Security setting.
+Users can easily provision and tear down these virtual machines to suit their current needs. Private cloud (also referred to as in a cloud).
+04:42
+This cloud computing implementation model is implemented in a stable, cloud based environment, and access is limited to approved users only. Using this model offers the ability for companies   o monitor their data and develop their own security measures. Public cloud: cloud services are available for public use and are distributed over a network (internet). community cloud:
+05:03
+A cloud computing model somewhere between public and private is defined by this deployment process. Set up is shared between shared interest organizations (such as banks
+05:14
+or trading companies), and access is limited for these organizations. Private Access. Hybrid: a mixture of all of the above consisting of several servers dedicated to either public or private access.
+05:25
+Cloud computing is becoming very popular because it is scalable, cost effective and efficient. Things in this slide are classified into one of the following features.
+05:39
+Flexibility scale up and down to meet organization requirements and pay as you go charge for services on a fine grain level, such as usage hours, gigabytes used, etc.
+
+easy and agile to deploy highly automated device and location independent. Reliability. 24x7 support. vendor responsible for hardware maintenance. vendor responsible for software updates and maintenance for SaaS model. Cost
+06:01
+Reduce total cost of ownership. (TCO). free up internal resources. Lower capital expenditure. In this unit, you have learned cloud computing
+06:20
+ubiquitous via network access location, independent shared pool of computing resources on demand, rapid provisioning and teardown pay only for current client requirements.
+06:32
+Service models Iaas, PaaS, SaaS, deployment models, public, private, community and hybrid. Thank you. Have a happy learning.

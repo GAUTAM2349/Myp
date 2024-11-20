@@ -1,0 +1,303 @@
+INTRODUCTION TO CPU AND PRIMARY STORAGE :-
+
+<!-- 
+No, a circuit board and a motherboard are not the same, though a motherboard is a type of circuit board. Here's how they differ:
+
+1. Circuit Board
+A circuit board, or printed circuit board (PCB), is a flat board made of insulating material (like fiberglass) with conductive pathways etched or printed on it.
+PCBs serve as a platform to mechanically support and electrically connect electronic components such as resistors, capacitors, transistors, and integrated circuits.
+Types of Circuit Boards:
+Single-sided PCBs: Have components mounted on one side of the board and conductive pathways on the other.
+Double-sided PCBs: Have components and conductive pathways on both sides.
+Multi-layer PCBs: Have multiple layers of conductive material, allowing for more complex circuits.
+Applications: Found in various devices, from simple gadgets like remote controls to complex equipment like computers, smartphones, medical devices, and industrial machines.
+2. Motherboard
+A motherboard is a specific type of circuit board that serves as the main board in a computer or other complex electronic devices.
+It connects and integrates the central components of a computer system, including the CPU (Central Processing Unit), RAM (Random Access Memory), storage devices, graphics cards, network interfaces, and other peripherals.
+Key Features of a Motherboard:
+Expansion Slots: Such as PCI, PCIe, or M.2 slots for adding additional components like graphics cards, network cards, or storage devices.
+Chipset: Manages data flow between the CPU, memory, and other peripherals.
+BIOS/UEFI: Firmware that initializes hardware during startup and manages system settings.
+Power Connectors: Supplies power to the motherboard and its components.
+I/O Ports: For connecting external devices, such as USB ports, audio jacks, and Ethernet ports.
+Summary:
+Circuit Board: A general term for any board that has electrical circuits, used in various electronic devices.
+Motherboard: A specialized type of circuit board that is the main board in a computer or similar device, integrating all key components and providing connections between them.
+ -->
+
+
+
+In this module we will learn about CPU , it's types and Primary storage.
+
+what is computer hardware?
+ -> The physical components that a computer system needs to operate are computer hardware. It includes any thing that functions in a PC or Laptop with a circuit board, including their motherboard, graphics card, CPU, ventilation fans, webcam power supply and so on.
+
+ * The key component that makes a pc work is Motherboard. It holds the cpu and is a hub that operates across all other hardware. It assigns power when necessary to coordinate through all other components, making it one of the most critical hardware elements in the computer. The computer motherboards are the main component of a computer.
+ 
+
+
+CPU ___
+
+The CPU is centeral processing unit is incharge of processing all the information and without which we cannot run programs on a computer.
+
+The CPU (Central Processing Unit) is the primary component of a computer that performs most of the processing inside a computer. Often referred to as the "brain" of the computer, the CPU executes instructions from software and coordinates the operations of other hardware components.
+
+What is a CPU?
+A CPU is an electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control, and input/output (I/O) operations specified by the instructions.
+Physical Form: It is typically a small, rectangular chip composed of millions or even billions of transistors. These transistors act as tiny switches that can turn on or off to represent binary data (0s and 1s).
+Key Components of a CPU:
+Control Unit (CU):
+
+Manages and coordinates all activities within the CPU.
+Fetches instructions from the computer's memory, decodes them, and sends control signals to direct the operation of other hardware components.
+Arithmetic Logic Unit (ALU):
+
+Performs all arithmetic operations (like addition, subtraction) and logical operations (like comparisons).
+The ALU is responsible for executing most of the instructions.
+Registers:
+
+Small, high-speed storage locations within the CPU that temporarily hold data and instructions.
+Registers store immediate results and intermediate data used by the CPU during computations.
+Cache Memory:
+
+A small amount of very fast memory located on or near the CPU. It stores frequently accessed data and instructions to reduce latency and speed up processing.
+Cache memory is divided into different levels (L1, L2, L3), with L1 being the smallest and fastest, and L3 being larger but slightly slower.
+What Does the CPU Do?
+Fetch: The CPU retrieves an instruction from the computer's memory (RAM).
+Decode: The Control Unit interprets the fetched instruction to determine what action is required.
+Execute: The CPU carries out the instruction using the ALU for calculations or logical operations.
+Store: The result of the executed instruction is stored back in the memory or in a register for future use.
+Functions of a CPU:
+Performing Calculations: Handles all mathematical computations and logical decisions needed by applications and operating systems.
+Running Programs: Executes the instructions of programs and applications by processing one instruction after another in a sequence.
+Managing Data Flow: Controls data transfer between the CPU, memory, and other devices.
+Interpreting and Executing Instructions: Interprets program instructions and performs the corresponding operations, such as moving data, making comparisons, and jumping to different instruction sequences.
+How the CPU Affects Computer Performance:
+Clock Speed: Higher clock speeds generally mean a CPU can process more instructions per second.
+Number of Cores: Multi-core CPUs can execute multiple instructions simultaneously, improving multitasking and parallel processing.
+Cache Size: A larger cache can store more data close to the CPU, reducing the time needed to access memory.
+Instruction Set: Determines what kinds of instructions the CPU can execute and how efficiently it can execute them.
+Example of CPU in Action:
+When you run a program (like a web browser):
+
+The program is loaded from storage (like an SSD) into memory (RAM).
+The CPU fetches the instructions one by one from the memory.
+It decodes these instructions to understand the actions needed (like displaying content, sending a network request, etc.).
+The CPU executes the instructions, handling tasks like rendering web pages or processing user inputs.
+Why is the CPU Important?
+The CPU is essential for any computer operation because it is responsible for executing the instructions that make software work, manage system resources, and interact with other hardware components.
+
+Brand: The brand of a processor refers to the manufacturer, such as Intel or AMD for desktop and laptop CPUs, or ARM for many mobile and embedded processors.
+
+Age: The age of a processor is determined by its release date and the generation to which it belongs. This affects its technology, architecture, and performance capabilities.
+
+Generation refers to the iteration or version of a processor model released by the manufacturer. It indicates improvements in technology, performance, efficiency, and features over previous versions.
+
+For example:
+
+Intel Processors: "12th Gen" or "13th Gen" (like Intel Core i7-12700K) indicates the generation of Intel's Core series, with newer generations offering better performance, power efficiency, and support for modern standards (e.g., DDR5 RAM, PCIe 5.0).
+AMD Processors: "Ryzen 5000 Series" or "Ryzen 7000 Series" denotes the generation for AMD Ryzen CPUs, with newer generations incorporating advanced architectures (e.g., Zen 4) and other enhancements.
+
+
+*clock speed 
+
+
+The speed of clock or the speed at which the processor process the information is measured in frequencies.
+
+Clock speed in a CPU (Central Processing Unit) refers to the rate at which the CPU executes instructions and performs operations. It is measured in Hertz (Hz), typically in gigahertz (GHz) for modern processors, where 1 GHz equals 1 billion cycles per second.
+
+What Clock Speed Represents:
+Clock Cycles: The CPU's clock speed represents the number of cycles the CPU can complete in one second. Each clock cycle allows the CPU to perform a certain amount of work, such as fetching, decoding, executing, and writing back instructions.
+
+Frequency of Operations: A higher clock speed generally means that the CPU can perform more operations per second, leading to better performance for tasks that require high processing power.
+
+How Clock Speed Affects Performance:
+Higher Clock Speed = Faster Performance: A CPU with a higher clock speed can potentially perform more instructions in a given amount of time, making it faster at handling tasks like gaming, video editing, and running complex applications.
+Not the Only Factor: While clock speed is an important indicator of CPU performance, it is not the only one. Other factors, like the number of cores, cache size, architecture, and instruction sets, also play a crucial role in determining overall performance.
+Factors Affecting Clock Speed:
+Thermal Limits: Higher clock speeds generate more heat, so the CPU's clock speed may be limited by the cooling solutions in place to prevent overheating.
+
+Power Consumption: Higher clock speeds also require more power. As a result, power management features like Dynamic Frequency Scaling or Turbo Boost may adjust the clock speed up or down depending on the workload and thermal conditions.
+
+Overclocking: Some CPUs allow users to increase the clock speed beyond the manufacturer's specification (overclocking) to achieve better performance, but this often requires better cooling and can lead to instability or reduced lifespan if not done carefully.
+
+Clock Speed vs. Multi-Core CPUs:
+In modern CPUs, clock speed alone is not always a definitive measure of performance. Multi-core CPUs have multiple processing units (cores) that can handle separate tasks simultaneously.
+A CPU with more cores but a slightly lower clock speed can outperform a CPU with a higher clock speed but fewer cores, especially for multi-threaded tasks.
+Example:
+A CPU running at 3.5 GHz completes 3.5 billion clock cycles per second. If another CPU runs at 2.5 GHz, it completes 2.5 billion clock cycles per second, meaning it might take longer to perform the same set of operations, assuming all other factors are equal.
+
+
+/*********************************************** main *///////
+
+Memory unit -: This unit stores all the instructions and data. Tis unit provides data to other units if necessary. It may be reffered to as the internal storage or main mimory or the primary stoage or RAM( Random access memory).
+
+Control unit :- This unit monitors all computing processes, but does not perform the actual data processing.
+
+Arithmetic Logical Unit :- This unit is the most significant part that does all the calculations and makes decisions. 
+
+  It consists of two sub-sections :-
+   
+   1> Arithmetic section -: It does all mathematical calculations like addition, subtraction, multiplication and division. COMPLEX CALCULATIONS ARE PERFORMED BY ARITHMETIC SECTION. It furter contains two subsection-:
+
+     Floating-Point Unit (FPU): This is a specialized part of the ALU designed to handle complex calculations involving floating-point numbers (numbers with decimal points). It can perform more advanced mathematical operations like exponentiation, trigonometry, and logarithms, which are generally required for scientific calculations and graphics processing.
+
+     Integer Unit: This part of the ALU deals with simpler, integer-based calculations such as addition, subtraction, logical operations, and comparisons.
+     
+   2> Logical Section :-
+
+     
+
+
+CPU TEMPRATURE :- 
+ 
+ This is to identify the temprature of your CPU. If the CPU gets overheated, it may harm your computer.CPU temprature monitoring program is required to measur the current CPU temprature. 
+ 
+
+CPU TYPES :- 
+
+Intel and AMD are two competing manufacturers of CPUs, and each has its varance of CPU'S. The oldest category of computer CPU in the offer was the single core CPUs and this was initially the only CPU type that was used in computers. Single core CPUs could only initiate one task at a time. So multitasking wasn't very successful. This means output regressions wre noticable every time more than one  application was running. Meanwhile, only one operation could be initiated at a time.  Another could be triggered in advance before the first one was done, but the machine would run slowly with every new operation.
+
+A dual core processor has two key CPUs, and as a result operates like two single CPUs. In contrast, if more than one operation is executed, the dual core CPUs can perform numerous tasks more effectively, whereas in the single core CPUs, the processor it has to move between the various data stream sets to enhance the use of a dual core CPU. A specialized code called SMT (simultaneous multithreading technology needs to be executed on operating sytem and the program's operational on it)
+
+
+STORAGE DEVICES :- 
+
+Computing hardware that is used for storing is a  storage device, porting and extracting data files and objects. It can hold and store information both BRIEFLY AND PERMANNENTLY and can be INTERNAL OR EXTERNAL to a computer, sever or any similar computing device.
+
+
+A storage device may possibly also be known as a storage medium or storage media. Storage devices are one of the essential components of any  computing device.
+
+They store virtuall all the data and applications on a computer. Apart from hardware firmware, they are available in the similar form, factors depending on the type of underlying device. Example cache, RAM, HDD and optical disk drive and externally connected flash drives. 
+
+There are two different types of storage devices:- 
+
+PRIMARY STORAGE devices normally smaller in size. They are desigined t hold data in short term and PLACED INSIDE COMPUTER. They have fastest data access speed and contains  RAM and cache memory. 
+
+SECONDARY STORAGE :- 
+
+These devices usually have more storage capacity and they store data permanently. It can be both internally and externally placed, and they include har disk, companct disk drive and USB storage device. 
+
+
+
+
+
+DURABLILITY :-
+
+Durablility is the ability to handle environmental factors such as dirt, humidity, heat and cold. It is measured in LIFESPAN AND WRITE CYCLES(VVI), the number of times data can be written and revised.
+
+
+DEPENDABILITY :- 
+
+Dependability is being open when needed, not subject to breakdown, malfunction, network outages or service interruptions. It can be measured by the mean time between failures.
+
+MTBF (Mean Time Between Failures) is the average time a device is expected to function before failing. For a cloud storage service, dependability can be measured by uptime, which is the percentage of time the service remains accessible and operational.
+
+
+
+SPEED :-
+
+Speed is the rate at which data can be stored or retrieved faster and is measured by data transfer rate, number of megabytes per second that is read or written by the storage device capacity. The amount of data that can be stored usually measured in gigabytes GB or terabytes(tbe). 
+
+
+COST :- 
+
+The price of the storage device and media usually expressed per gigabyte GB. 
+
+Their are two types of storage :-
+
+1> Primary storage
+2> Secondary Storage
+
+Primary storage is often reffered to as just memory and can both be classified as volatile(RAM) or non-volatile(ROM).
+
+Volatile memory, such as RAM looses data as soon as the device loses power. The flash memory in SSD(not primary storage) is non-volatile because the data is their even after you have turned it off. This enables some applications to recover unsaved information in the event of a crash.
+
+STATIC RAM is faster and does not need to be refreshed than DYNAMIC RAM because it is expensive and holds less data than dynamic ram. It is mainly used for cache memory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+************************************EXTRAS ***********************************
+
+
+Whether a dual-core processor is faster than a quad-core processor depends on several factors, including the specific use case, the architecture of the CPUs, clock speeds, and how well the software is optimized for multiple cores.
+
+General Differences Between Dual-Core and Quad-Core Processors
+Number of Cores:
+
+A dual-core processor has two cores, while a quad-core processor has four cores. More cores allow the CPU to handle more tasks simultaneously, which is beneficial for multitasking and parallel processing.
+Performance for Multithreaded Applications:
+
+Quad-core processors generally perform better in multithreaded applications (like video editing, 3D rendering, gaming, and heavy multitasking) because these applications are designed to utilize multiple cores effectively.
+Performance for Single-Threaded Applications:
+
+For applications that do not take advantage of multiple cores (single-threaded applications), the performance will depend more on the clock speed (measured in GHz) and the per-core performance of the CPU. In this case, a high-clock-speed dual-core processor could potentially outperform a lower-clock-speed quad-core processor for these specific tasks.
+Clock Speed and Architecture:
+
+The clock speed (frequency) of the CPU cores and the microarchitecture (generation and design of the processor) also play a significant role in determining overall performance. A newer dual-core CPU with a higher clock speed and better architecture may outperform an older quad-core CPU with a lower clock speed.
+Power Consumption and Heat:
+
+Dual-core processors typically consume less power and generate less heat compared to quad-core processors, making them more suitable for lightweight tasks, energy-efficient systems, or situations where cooling is limited (e.g., in laptops).
+Scenarios Where Dual-Core or Quad-Core is Faster
+Dual-Core May Be Faster If:
+
+The application or task is heavily single-threaded and benefits from higher clock speeds rather than more cores.
+The dual-core CPU is newer with better architecture and higher clock speeds than the quad-core CPU.
+Power efficiency and lower heat output are more critical for the use case.
+Quad-Core May Be Faster If:
+
+The tasks involve heavy multitasking, parallel processing, or multithreaded applications (like video rendering, game development, or running virtual machines).
+The software is optimized to utilize multiple cores effectively.
+The quad-core CPU has a comparable or higher clock speed and similar architecture.
+Conclusion
+In general, quad-core processors are faster and more efficient for most modern computing tasks, especially those involving multitasking and multithreaded workloads. However, in specific scenarios, such as single-threaded applications or power-limited environments, a dual-core processor with a higher clock speed or newer architecture could outperform a quad-core processor.
+
+The best choice depends on your specific needs and the types of tasks you will be performing.
+
+
+
+
+
+
+
+
+
+
+
+ChatGPT can mak
