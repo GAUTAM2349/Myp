@@ -1,0 +1,11 @@
+Linux
+
+gaut2349@DESKTOP-E9OC4I6:~/Coding$     what does  ~  mean
+ChatGPT said:
+ChatGPT
+In a Unix-like operating system (such as Linux), the tilde (~) symbol represents the home directory of the current user. It's a shorthand that makes it easier to refer to paths relative to your home directory.
+
+For example:
+
+If your username is gaut2349, your home directory might be something like /home/gaut2349.
+When you see ~/Coding, it means the path is /home/gaut2349/Coding.

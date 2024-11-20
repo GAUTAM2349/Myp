@@ -1,0 +1,8 @@
+browser:-
+
+* disable cache 
+* select 'all' to see all the network requests
+* select 'js' to see .js requests
+* lodash
+
+* Development Tools: Frontend projects need tools like bundlers (Parcel, Webpack), transpilers (Babel), and linters (ESLint). 	

@@ -1,0 +1,3 @@
+Projects ideas :-
+
+1> A paywall is a method used by websites, especially those offering news, entertainment, or research content, to restrict access to their content unless users pay a fee or subscribe to their service. It’s a digital "gate" that ensures only paying users can view certain articles, reports, or features.  Hard Paywall,Soft Paywall,Freemium Model,Metered Paywall

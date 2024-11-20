@@ -1,0 +1,7 @@
+r status codes :-
+
+1> 300 -> The HTTP status code 302 Found indicates that the requested resource has been temporarily moved to a different URL specified in the Location header
+1
+. When a browser receives this status code, it automatically redirects the user to the new URL. However, search engines do not transfer SEO value to the new URL, as the redirection is considered temporary.
+
+2> 200 -> OK

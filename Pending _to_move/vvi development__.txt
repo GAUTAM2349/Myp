@@ -1,0 +1,29 @@
+vvi development:__
+
+1> Microservices :_ 
+	Refers to how you structure the back-end of an application.
+A microservice is an architectural style where a single application is split into multiple small services that are independently deployable and communicate over a network (typically via APIs).
+Each microservice handles a specific business function, and they are typically decoupled, allowing teams to work on different services without interfering with each other.
+It is a server-side architecture that focuses on how different parts of a system interact at the back end.
+
+2> Managing multiple React roots using MutationObserver
+   -> https://medium.com/geekculture/managing-multiple-react-roots-using-mutationobserver-93d35f070d54#:~:text=If%20it%E2%80%99s%20on%20the%20same%20screen%2C%20it%20should,fact%2C%20it%E2%80%99s%20the%20way%20Facebook%20works%20with%20it.
+
+3> HTTP response status codes
+
+	https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302
+
+
+4> Should I add package-lock.json to git? Why is it important to commit `package-lock.json` into git?
+       https://freedium.cfd/https://medium.com/@InspireTech/should-i-add-package-lock-json-to-git-why-is-it-important-to-commit-package-lock-json-into-git-e8273a8aad00
+
+
+5> Tilde (~) vs Caret (^) in package.json: What's the Difference?
+   -> https://freedium.cfd/https://medium.com/geekculture/tilde-vs-caret-in-package-json-whats-the-difference-2682b7e6ecf8
+
+6> browserlist package , polyfill
+
+7> S.O.L.D, D.R.Y, K.I.S.S prinicples	
+
+8>>>>> https://chatgpt.com/share/6738d89d-d524-800e-9ff5-c8b60547bfad
+
